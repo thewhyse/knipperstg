@@ -1,0 +1,133 @@
+/*
+Knipper WordPress Admin Styles
+*/
+
+#epanel-mainmenu a {
+    background-color: #a566f2;
+}
+.et-db #et-boc .et-l .et-fb-skeleton__header,
+body,
+p,
+.fEQOki p,
+.hhycBg,
+.ixqILZ,
+.jHKnvS,
+a.rsswidget,
+#dashboard-widgets h3,
+#dashboard-widgets h4,
+#dashboard_quick_press .drafts h2,
+.postbox .inside,
+.metabox-holder .postbox>h3,
+.metabox-holder .stuffbox>h3,
+.metabox-holder h2.hndle,
+.metabox-holder h3.hndle,
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary,
+code,
+kbd,
+input,
+textarea,
+.subsubsub,
+.wp-list-table a,
+.widefat *,
+.row-actions,
+#wpadminbar .ab-label,
+#adminmenu div.wp-menu-name,
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-top,
+#wpadminbar .quicklinks .menupop ul li a,
+#wpadminbar .quicklinks .menupop ul li a strong,
+#wpadminbar .quicklinks .menupop.hover ul li a,
+#wpadminbar.nojs .quicklinks .menupop:hover ul li a,
+#wpadminbar .quicklinks .ab-empty-item,
+#wpadminbar .quicklinks a,
+#wpadminbar .shortlink-input,
+#adminmenu .wp-submenu a,
+.wp-core-ui select,
+.form-table,
+.form-table td,
+.form-table td p,
+.form-table th,
+#wpfooter p,
+.wp-die-message,
+#epanel-content .et-epanel-box .et-upload-image-button,
+#epanel-content .et-epanel-box .et-upload-image-reset,
+#epanel-content .et-epanel-box .et-button,
+#adminmenu .wp-submenu-head,
+#adminmenu a.menu-topnu a,
+.et-save-button,
+.et-epanel-box select,
+.et-epanel-box input[type="text"],
+.et-epanel-box input[type="password"],
+.et-epanel-box textarea, 
+#epanel .et_pb_yes_no_button,
+#epanel .et-epanel-box div.et-box-title h3,
+#epanel-content ul.et-id-tabs a,
+#epanel-mainmenu a,
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active,
+.display-name {
+    font-size: 11px !important;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-primary,
+.wp-core-ui .button-secondary,
+#epanel-mainmenu a,
+.et-save-button,
+#epanel-content ul.et-id-tabs a {
+    text-transform: uppercase !important;
+}
+
+h1#epanel-title {
+    font-size: 13px;
+    line-height: 13px;
+}
+
+.metabox-prefs .screen-options .screen-per-page {
+    min-width: 55px;
+}
+
+.postbox .inside h2, .wrap [class$=icon32]+h2, .wrap h1, .wrap>h2:first-child {
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: -0.5px;
+}
+
+.wrap .add-new-h2,
+.wrap .add-new-h2:active,
+.wrap .page-title-action,
+.wrap .page-title-action:active {
+    border: 1px solid #2271b1;
+    border-radius: 0;
+    font-weight: 600;
+    font-size: 11px;
+    background: #f6f7f7;
+    cursor: pointer;
+    background: #2271b1;
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 1;
+}
+#wpadminbar #wp-admin-bar-my-account.with-avatar>.ab-empty-item img, #wpadminbar #wp-admin-bar-my-account.with-avatar>a img {
+    width: 21px;
+    height: 21px;
+    padding: 0;
+    border: none;
+    background: #f0f0f1;
+    line-height: 1.84615384;
+    vertical-align: middle;
+    margin: -4px 0 0 6px;
+    float: none;
+    display: inline;
+    border-radius: 100%;
+    top: 2px;
+    position: relative;
+}
+
+/* ********** DIVI BUILDER FOOTER ********** */
+
