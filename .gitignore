@@ -18,6 +18,12 @@ sitemap.xml.gz
 .lando.yml
 .vscode
 
+# mp3, mp4, ogg files
+assets/flipbook/1/mobile/style/raw/flipsound.mp3
+assets/flipbook/1/mobile/style/raw/flipsound.ogg
+assets/*.mp4
+wp-content/themes/twentytwentytwo/assets/videos/birds.mp4
+
 # @TODO writable paths
 wp-content/cache/
 wp-content/backups/
