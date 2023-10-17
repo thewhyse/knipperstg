@@ -1,0 +1,29 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER FAQ PAGE START ******* */
+
+
+
+.faq.et_pb_text {
+    margin: 0 0 0 15px;
+    position: relative;
+}
+.et_pb_text .faq-letter {
+    color: $knipper_red;
+    position: absolute;
+    left: -15px;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER FAQ PAGE END ******* */

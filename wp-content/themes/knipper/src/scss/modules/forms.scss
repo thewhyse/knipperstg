@@ -1,0 +1,102 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER FORMS START ******* */
+
+
+/* ***** GRAVITY FORMS ***** */
+
+.g-form input,
+.g-form select,
+.g-form textarea {
+    font-size: 12px !important;
+}
+.gform-label-sidebar .gfield_label {
+    font-size: 12px !important;
+}
+.g-form input,
+.g-form textarea {
+    border: 0px;
+    margin-bottom: 10px;
+    outline: 0;
+    padding: 10px !important;
+}
+.g-form input[type=submit] {
+    background-color: $knipper_red !important;
+    border-radius: 0 10px 0 10px;
+    color: $white !important;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 20px !important;
+}
+.g-form.sidebar-form {
+    padding: 10px;
+}
+.g-form.sidebar-form textarea {
+    height: 150px !important;
+}
+.g-form.sidebar-form input[type=submit] {
+    background-color: $mid_grey4 !important;
+    font-size: 14px;
+    font-weight: initial;
+    padding: 10px 25px !important;
+}
+.g-contact-form {
+    background-color: $knipper_blue;
+    padding-top: 40px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    padding-left: 25px;
+    border-radius: 20px 0 20px 0;
+    -webkit-box-shadow: 0 0 10px 3px rgb(0 0 0 / 35%);
+            box-shadow: 0 0 10px 3px rgb(0 0 0 / 35%);
+}
+.g-contact-form .g-form-checkboxes {
+    background-color: $white !important;
+    border-top: solid 30px $white !important;
+    padding: 0 10px 10px !important;
+}
+.g-form .g-form-checkboxes .gchoice {
+    margin: 0 0 7px 0;
+}
+.g-form .g-form-checkboxes input[type=checkbox] {
+    margin: 0 5px 0 0;
+}
+.g-form.g-contact-form input[type=submit] {
+    background-color: transparent !important;
+    border: 2px solid $white;
+    font-size: 14px;
+    font-weight: initial;
+    padding: 10px 25px !important;
+}
+
+/* ***** Subpage Form Styles ***** */
+
+.subpage-aside-block {
+    background-color: $very_lgt_grey2;
+    border-radius: 0 20px 0 20px;
+}
+.subpage-aside-block h3 {
+    background-color: $knipper_blue;
+    border-radius: 0 20px 0 0;
+    color: $white;
+    padding-top: 10px;
+    text-align: center;
+}
+.subpage-aside-snippet {
+    margin: 20px;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER FORMS END ******* */

@@ -1,0 +1,61 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER CONTACT PAGE START ******* */
+
+#et_pb_contact_form_subpage {
+    background-color: $very_lgt_grey2;
+    border-radius: 0 20px 0 20px;
+}
+#et_pb_contact_form_subpage h4 {
+    background-color: $knipper_blue;
+    border-radius: 0 20px 0 0;
+    color: $white;
+    padding: 10px 0 10px 0;
+    text-align: center;
+}
+#et_pb_contact_form_subpage .et_pb_contact_form {
+    padding: 10px;
+}
+#et_pb_contact_form_subpage input,
+#et_pb_contact_form_subpage textarea {
+    background-color: $white;
+}
+#et_pb_contact_form_subpage button {
+    background-color: $mid_grey4 !important;
+    border: 0;
+    border-radius: 0 20px 0 20px;
+    color: $white;
+    display: block;
+    font-size: 15px !important;
+    font-weight: 400;
+    max-width: 185px;
+    margin: 10px auto;
+    padding: 5px 30px;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+#et_pb_contact_form_subpage .et_pb_button:after,
+.et_pb_button:before {
+    line-height: .75em;
+}
+.et_pb_contact_captcha {
+    position: relative;
+    right: -8px;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER CONTACT PAGE END ******* */

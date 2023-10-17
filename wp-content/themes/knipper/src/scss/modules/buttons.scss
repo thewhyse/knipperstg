@@ -1,0 +1,187 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER BUTTONS START ******* */
+
+.et_pb_bg_layout_light.et_pb_button:hover, .et_pb_bg_layout_light .et_pb_button:hover {
+    background-color: transparent !important;
+}
+.tlpage-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    max-width: 715px;
+}
+.tlpage-button {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    color: $white !important;
+    background: $very_lgt_grey;
+    border-radius: 0 20px 0 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    font-family: $font_r;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    line-height: 1.25em;
+    margin: 0 0 10px 0;
+    max-width: 215px;
+    min-width: 215px;
+    min-height: 50px;
+    padding: 5px;
+    text-align: center;
+}
+.tlpage-button span {
+    position: relative;
+    width: 100%;
+}
+.tlpage-button span::after {
+    content: 'E';
+    font-family: $font_e;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translatey(-50%);
+        -ms-transform: translatey(-50%);
+            transform: translatey(-50%);
+}
+.tlpage-button:hover>span::after {
+    right: 10px;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+.orange-button {
+    background: $orange;
+}
+.orange-button span::after {
+    color: $white;
+}
+.red-button {
+    background: $knipper_red;
+}
+.red-button span::after {
+    color: $white;
+}
+.blue-button {
+    background: $knipper_blue;
+}
+.blue-button span::after {
+    color: $white;
+}
+.purple-button {
+    background: $purple;
+}
+.purple-button span::after {
+    color: $white;
+}
+.et_pb_button {
+    border-radius: 0 20px 0 20px !important;
+}
+.sidebar-btn {
+    line-height: 1.5em !important;
+    min-width: 325px;
+    width: 100%;
+    max-width: 350px;
+}
+.subpage-aside-block a.button1 {
+    background-color: $mid_grey3;
+    border: 0;
+    border-radius: 0 20px 0 20px;
+    color: $white;
+    display: block;
+    font-size: 15px !important;
+    max-width: 185px;
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.subpage-aside-block a.button1:hover {
+    background-color: $knipper_blue;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+.subpage-aside-block a.button2 {
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0;
+    padding: 0 0 15px 0;
+}
+.et_pb_button_8,
+.et_pb_button_9,
+.et_pb_button_10,
+.et_pb_button_11 {
+    justify-content: center;
+}
+a.knipper-btn {
+    text-align: center;
+    padding: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    color: $white !important;
+    border-width: 0px!important;
+    border-radius: 0px !important;
+    font-size: 22px;
+    @include bold();
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-blend-mode: normal;
+}
+.btn-175 {
+    width: 175px;
+}
+.btn-430 {
+    width: 430px;
+}
+.yellow-430 {
+    background-image: url('/wp-content/themes/knipper/images/bro-btn-large-yellow-430x60.png');
+}
+.yellow-175 {
+    background-image: url('/wp-content/themes/knipper/images/bro-btn-yellow-175x60.png');
+}
+.red-175 {
+    background-image: url('/wp-content/themes/knipper/images/bro-btn-red-175x60.png');
+}
+.blue-175 {
+    background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-175x60.png');
+}
+.green-175 {
+    background-image: url('/wp-content/themes/knipper/images/bro-btn-green-175x60.png');
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER BUTTONS END ******* */

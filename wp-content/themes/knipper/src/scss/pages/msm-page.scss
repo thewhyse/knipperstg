@@ -1,0 +1,164 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER MSM PAGE START ******* */
+
+
+/* ***** JULY 23 MSM PAGE ***** */
+
+/*  MSM HERO SECTION  */
+div#msm-hero-section {
+    padding-top: 0 !important;
+}
+div#msm-row-hero {
+    div#msm-hero-col {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+}
+
+/*  MSM BODY TOP SECTION  */
+div#msm-topbody-image {
+    width: 100% !important;
+}
+div#msm-yoast-breadcrumb {
+    margin-left: 10px;
+}
+div#msm-breadcrumb-row {
+    padding: 0 !important;
+}
+div#msm-yoast-breadcrumb .breadcrumbs.msm {
+    color: $knipper_blue;
+    font-family: $font_r;
+    font-weight: 500;
+    font-size: 16px !important;
+}
+div#msm-yoast-breadcrumb .breadcrumbs a {
+    color: $knipper_blue !important;
+}
+div#msm-yoast-breadcrumb .breadcrumbs a:hover {
+    color: $dark_blue !important;
+    text-decoration: underline;
+}
+div#msm-body-top {
+    padding-bottom: 30px !important;
+}
+div#msm-row-topbody .et_pb_column_1.msm-topbody-col {
+    max-width: 460px;
+}
+div#msm-row-topbody .et_pb_column_2.msm-topbody-col {
+    max-width: 880px;
+}
+div#msm-row-topbody .msm-topbody-col .et_pb_button_2_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_3_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_4_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_5_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_6_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_7_wrapper {
+    width: 50%;
+    float: left;
+    margin: 0!important;
+    margin: 0 !important;
+    padding-left: 0;
+    padding-right: 0;
+
+}
+div#msm-row-topbody .msm-topbody-col .et_pb_button_2_wrapper a,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_3_wrapper a,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_4_wrapper a,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_5_wrapper a,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_6_wrapper a,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_7_wrapper a {
+    min-width: 0;
+}
+div#msm-row-topbody .msm-topbody-col .et_pb_button_2_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_3_wrapper {
+    margin-bottom: 30px !important;
+}
+div#msm-row-topbody .msm-topbody-col .et_pb_button_4_wrapper,
+div#msm-row-topbody .msm-topbody-col .et_pb_button_5_wrapper {
+    margin-bottom: 55px !important;
+}
+span.knipper-register {
+    font-size: 15px;
+    position: relative;
+    top: -7px;
+}
+a#msm-topbody-contact-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 308px;
+    margin-left: 10px;
+    margin-top: 35px ;
+    background-position: 100% !important;
+}
+div#msm-topbody-blue-logo img {
+    max-height: 80px;
+}
+div#msm-topbody-p1,
+div#msm-topbody-p2,
+div#msm-topbody-p3 {
+    clear: both;
+}
+a#msm-topbody-btn1,
+a#msm-topbody-btn2,
+a#msm-topbody-btn3,
+a#msm-topbody-btn4,
+a#msm-topbody-btn5,
+a#msm-topbody-btn6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 100% !important;
+    line-height: 1 !important;
+}
+.msm-topbody-btn-390 {
+    max-width: 390px;
+}
+.msm-topbody-btn-423 {
+    max-width: 423px;
+}
+/*  MSM CTA SECTION  */
+div#msm-row-cta {
+    height: 100%;
+}
+div#msm-cta-section {
+    padding: 0 !important;
+    position: relative;
+    top: -2px;
+    background-position: 32%;
+}
+div#msm-cta-section .et_pb_column_7 {
+    padding-left: 5%;
+}
+a#msm-cta-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*  MSM LARGE ICON 4-PANEL  */
+div#msm-icon-4-panel .et_pb_blurb_content {
+    max-width: unset;
+}
+div#msm-icon-4-panel .et_pb_blurb_container {
+    vertical-align: middle;
+}
+div#msm-icon-4-panel h4.et_pb_module_header {
+    max-width: 400px;
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER MSM PAGE END ******* */

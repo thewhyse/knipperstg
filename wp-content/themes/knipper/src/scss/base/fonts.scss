@@ -1,0 +1,37 @@
+@import "colors";
+
+/* ******* KNIPPER FONTS START ******* */
+
+$font_r: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+$font_o: 'Open Sans', sans-serif;
+$font_e: 'ETmodules' !important;
+
+@mixin light() {
+  font-family: $font_r;
+  font-weight: 300 !important;
+}
+@mixin regular() {
+  font-family: $font_r;
+  font-weight: 400 !important;
+}
+@mixin medium() {
+  font-family: $font_r;
+  font-weight: 500 !important;
+}
+@mixin demi-bold() {
+  font-family: $font_r;
+  font-weight: 600 !important;
+}
+@mixin bold() {
+  font-family: $font_r;
+  font-weight: 700 !important;
+}
+@mixin extra-bold() {
+  font-family: $font_r;
+  font-weight: 800 !important;
+}
+@mixin black() {
+  font-family: $font_r;
+  font-weight: 900 !important;
+}
+/* ******* KNIPPER FONTS END ******* */

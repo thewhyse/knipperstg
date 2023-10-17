@@ -1,0 +1,97 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER HOME PAGE START ******* */
+
+
+/* *********** HOME PAGE HERO *********** */
+
+div#home-hero-section  .et_pb_slider .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_title {
+    padding-bottom: 2%;
+    font-size: 3.5vw !important;
+}
+div#home-hero-section  .et_pb_slider.et_pb_module .et_pb_slide_0.et_pb_slide .et_pb_slide_description .et_pb_slide_content {
+    font-size: 3.25vw !important;
+    padding-left: 20px;
+}
+div#home-hero-section .et_pb_slide_description,
+div#home-hero-section .et_pb_slider_fullwidth_off .et_pb_slide_description {
+    height: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+div#home-hero-section  .et_pb_slides .et_pb_slider_container_inner {
+    vertical-align: initial !important;
+}
+div#home-hero-section  .et_pb_slider .et_pb_container {
+    max-width: 100% !important;
+    height: 300px !important;
+}
+
+/* ***** JULY 2023 HOME PAGE UPDATES ***** */
+div#home-mkt-served-section {
+    padding-bottom: 60px !important;
+}
+h1.home-header {
+    font-size: 40px !important;
+    line-height: 40px !important;
+}
+.numbers-copy {
+    line-height: 30px !important;
+}
+
+#anniversary-video p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.et_pb_scroll_top.et-visible {
+    width: 60px;
+}
+div.gold-round-icon {
+    background: transparent;
+    display: inline-block;
+}
+div.gold-round-icon .et_pb_image_wrap {
+position: relative;
+width: 100%;
+height: 100%;
+-webkit-transition: -webkit-transform 0.6s;
+transition: -webkit-transform 0.6s;
+-o-transition: transform 0.6s;
+transition: transform 0.6s;
+transition: transform 0.6s, -webkit-transform 0.6s;
+-webkit-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+}
+div.gold-round-icon:hover .et_pb_image_wrap {
+-webkit-transition: 0.8s;
+-o-transition: 0.8s;
+transition: 0.8s;
+-webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER HOME PAGE END ******* */

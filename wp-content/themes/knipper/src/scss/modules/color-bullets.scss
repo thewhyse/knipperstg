@@ -1,0 +1,130 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER COLORED BULLETS PAGE START ******* */
+
+ul.color-bullets {
+    list-style-type: none;
+}
+ul.color-bullets li {
+    list-style-type: none;
+    margin: 0 0 10px 15px;
+    position: relative;
+}
+ul.color-bullets li ul li::before {
+    content: '-' !important;
+    background-image: none !important;
+    font-weight: bold;
+    left: -10px !important;
+    top: 0 !important;
+}
+ul.color-bullets.white-bullets>li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/white-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.red-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/red-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.red-bullets li ul li::before {
+    color: $knipper_red !important;
+}
+ul.color-bullets.orange-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/orange-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.lime-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/lime-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.lime-bullets li ul li::before {
+    color: $lime_green !important;
+}
+ul.color-bullets.green-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/green-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.teal-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/teal-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.teal-bullets li ul li::before {
+    color: $aqua_blue !important;
+}
+ul.color-bullets.blue-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/blue-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+ul.color-bullets.violet-bullets li:before {
+    content: '';
+    background-image: url('/wp-content/themes-knipper/images/violet-bullet.png');
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 15px;
+    left: -20px;
+    position: absolute;
+    top: 5px;
+    width: 16px;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER COLORED BULLETS PAGE END ******* */

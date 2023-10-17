@@ -1,0 +1,297 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER MOBILE MENU START ******* */
+
+
+/* *********** MOBILE MENU *********** */
+
+#mobile_menu > li.mega-menu.red.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-442.mega-menu-parent.mega-menu-parent-2.dt-open > ul > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23642.is-hover.dt-open > ul > li.submenu-indent.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-23643 > a,
+#mobile_menu > li.mega-menu.red.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-442.mega-menu-parent.mega-menu-parent-2.dt-open > ul > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23642.is-hover.dt-open > ul > li.submenu-indent.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-23644 > a,
+#mobile_menu > li.mega-menu.red.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-442.mega-menu-parent.mega-menu-parent-2.dt-open > ul > li.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-has-children.menu-item-23642.is-hover.dt-open > ul > li.submenu-indent.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-23645 > a {
+    margin-left: 0px !important;
+}
+
+.mobile_menu_bar:before {
+    content: "a";
+    font-size: 44px;
+    position: relative;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+}
+.et_mobile_menu li.mega-menu ul.sub-menu li.menu-item a {
+    color: $white !important;
+}
+.mobile_menu_bar:before,
+.mobile_menu_bar:after,
+#top-menu li.current-menu-ancestor>a,
+#top-menu li.current-menu-item>a {
+    color: $white;
+}
+.et_mobile_menu li li {
+    padding-left: 0 !important;
+}
+#main-header .et_mobile_menu li ul, .et_pb_fullwidth_menu .et_mobile_menu li ul, .et_pb_menu .et_mobile_menu li ul {
+    padding-left: 0 !important;
+}
+.et_mobile_menu li.mega-menu ul.sub-menu li.menu-item a {
+    font-size: 20px !important;
+    line-height: 30px !important;
+    font-weight: 400 !important;
+}
+.et_mobile_menu .menu-item-has-children>a,
+.et_mobile_menu li a {
+    font-weight: 400 !important;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 70px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400 !important;
+}
+
+.et_header_style_left #et-top-navigation .mobile_menu_bar {
+    padding: 0 !important;
+}
+
+/* *********** MOBILE MEGA MENU *********** */
+
+.et_mobile_menu li a.mobile-toggle:hover{
+    background-color:transparent !important;
+}
+.et_mobile_menu li a:hover {
+    background-color: $drk_grey !important;
+    opacity: 1 !important;
+    color: $white !important;
+}
+.et_mobile_menu li a:hover
+.nav ul li a:hover {
+    opacity: 1 !important;
+}
+
+ul#mobile_menu li.mega-menu.red ul.sub-menu li.menu-item a:hover,
+ul#mobile_menu li.mega-menu.green ul.sub-menu li.menu-item a:hover,
+ul#mobile_menu li.mega-menu.blue ul.sub-menu li.menu-item a:hover {
+    color: $white !important;
+    font-weight: 400 !important;
+}
+ul#mobile_menu li.mega-menu.red > ul.sub-menu.visible > li.menu-item:hover,
+ul#mobile_menu li.mega-menu.green > ul.sub-menu.visible > li.menu-item:hover,
+ul#mobile_menu li.mega-menu.blue > ul.sub-menu.visible > li.menu-item:hover  {
+    background-color: $drk_grey;
+}
+#mobile_menu > li.mega-menu.blue.menu-item.dt-open > ul > li.menu-item.dt-open > ul > li.menu-item > a:hover {
+    color: $knipper_blue !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+}
+#mobile_menu > li.mega-menu.green.menu-item.dt-open > ul > li.menu-item.dt-open > ul > li.menu-item > a:hover {
+    color:  $knipper_green !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+}
+
+#mobile_menu > li.mega-menu.red.menu-item.dt-open > ul > li.menu-item.dt-open > ul > li.menu-item > a:hover {
+    color: $knipper_red !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+}
+#mobile_menu > li.topmenu-blue.menu-item.dt-open > ul > li.menu-item > a:hover {
+    color: $mid_grey1 !important;
+    font-weight: bold !important;
+    background-color: transparent !important;
+}
+
+/*change hamburger icon to x when mobile menu is open*/
+.et_mobile_menu li a {
+    border-bottom: none;
+}
+ul#mobile_menu ul.sub-menu.visible ul.sub-menu.visible,
+ul#mobile_menu li.topmenu-blue ul.sub-menu.visible {
+    background-color: $white;
+    text-align: left !important;
+    padding: 30px 40px !important;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+ul#mobile_menu ul.sub-menu.visible ul.sub-menu.visible li.menu-item a,
+ul#mobile_menu li.topmenu-blue ul.sub-menu.visible li.menu-item a {
+    color: $mid_grey1 !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: 60px;
+    font-weight: 500 !important;
+}
+ul#mobile_menu .mega-menu.blue {
+    background: $knipper_blue;
+}
+ul#mobile_menu .mega-menu.green {
+    background: $knipper_green;
+}
+ul#mobile_menu .mega-menu.red {
+    background: $knipper_red;
+}
+ul#mobile_menu li.topmenu-blue,
+ul#mobile_menu li.topmenu-green,
+ul#mobile_menu li.topmenu-red {
+    background: $mid_grey1;
+}
+
+#et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before,
+.et_pb_module.et_pb_menu .et_mobile_nav_menu .mobile_nav.opened .mobile_menu_bar::before {
+	content: '\4d';
+}
+
+/*adjust the new toggle element which is added via jQuery*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+ul.et_mobile_menu li.page_item_has_children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.page_item_has_children .mobile-toggle {
+	width: 100px;
+	height: 100%;
+	padding: 0px !important;
+	max-height: 70px;
+	border: none;
+	position: absolute;
+	right: 0px;
+	top: 0px;
+	z-index: 999;
+	background-color: transparent;
+}
+
+/*some code to keep everyting positioned properly*/
+ul.et_mobile_menu>li.menu-item-has-children,
+ul.et_mobile_menu>li.page_item_has_children,
+ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.page_item_has_children,
+.et-db #et-boc .et-l ul.et_mobile_menu>li.menu-item-has-children .sub-menu li.menu-item-has-children {
+	position: relative;
+}
+
+/*remove default background color from menu items that have children*/
+.et_mobile_menu .menu-item-has-children>a,
+.et-db #et-boc .et-l .et_mobile_menu .menu-item-has-children>a {
+	background-color: transparent;
+}
+
+/*hide the submenu by default*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu {
+	display: none !important;
+	visibility: hidden !important;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+/*show the submenu when toggled open*/
+ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+#main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #et-boc .et-l ul.et_mobile_menu .menu-item-has-children .sub-menu.visible,
+.et-db #main-header ul.et_mobile_menu .menu-item-has-children .sub-menu.visible {
+	display: block !important;
+	visibility: visible !important;
+    -webkit-transition: all 2s ease-in-out;
+    -o-transition: all 2s ease-in-out;
+    transition: all 2s ease-in-out;
+}
+
+/*adjust the toggle icon position and transparency*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle {
+	text-align: center;
+	opacity: 1;
+}
+
+/*submenu toggle icon when closed*/
+ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children .mobile-toggle::after {
+    content: '';
+    position: absolute;
+    top: 31px;
+    right: 85px;
+    margin-left: 0;
+    margin-top: 0;
+    width: 0;
+    z-index: 1;
+    height: 0;
+    border-bottom: solid 8px $white;
+    border-left: solid 8px transparent;
+    border-right: solid 8px transparent;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+/*submenu toggle icon when open*/
+ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after,
+.et-db #et-boc .et-l ul.et_mobile_menu li.menu-item-has-children.dt-open>.mobile-toggle::after {
+    content: '';
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+}
+
+/*add point on top of the menu submenu dropdown*/
+.et_pb_menu_0.et_pb_menu .et_mobile_menu:after {
+	position: absolute;
+	right: 5%;
+	margin-left: -20px;
+	top: -14px;
+	width: 0;
+	height: 0;
+	content: '';
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 20px solid $white;
+}
+
+/*adjust the position of the hamburger menu*/
+.mobile_menu_bar {
+	position: relative;
+	display: block;
+	bottom: 0;
+	line-height: 0;
+}
+
+/*force the background color and add a rounded border*/
+ul#mobile_menu.et_mobile_menu {
+    padding: 0;
+    top: 75px;
+    border: none;
+}
+.et_pb_menu_0.et_pb_menu .et_mobile_menu,
+.et_pb_menu_0.et_pb_menu .et_mobile_menu ul {
+	background-color: $white !important;
+	border-radius: 0;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER MOBILE MENU END ******* */

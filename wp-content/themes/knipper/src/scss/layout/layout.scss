@@ -1,0 +1,147 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER LAYOUT START ******* */
+
+/* ***** CSS RESET START ***** */
+
+/* Use a more-intuitive box-sizing model. */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/* Remove default margin */
+* {
+  margin: 0;
+}
+/* Typographic tweaks! Add accessible line-height & improve text rendering */
+body {
+    font-family: $font_r;
+    font-size: 16px;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    top: 0px;
+    position: relative;
+    color: $drk_grey;
+
+}
+/* Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+/* ***** CSS RESET END ***** */
+
+.breadcrumbs,
+.breadcrumbs a {
+    color: $white;
+}
+body {
+    overflow: scroll;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+}
+/* body #page-container .et_pb_section .et_pb_button_0,
+body #page-container .et_pb_section .et_pb_button_1,
+body #page-container .et_pb_section .et_pb_button_2 {
+    line-height: 20px !important;
+} */
+body:not(.home) div.et_pb_section_0.et_pb_section {
+    padding-top: 14px !important;
+}
+body.page-template-default div#page-container {
+    padding-top: 74px !important;
+}
+body.post-template-default div#page-container {
+    padding-top: 149px !important;
+}
+.et-social-linkedin a.icon:before {
+    content: '\e09d';
+}
+#post-7>div>div>div>div.et_pb_section.et_pb_section_1.et_pb_fullwidth_section.et_section_regular>div>div>div>div {
+    height: unset !important;
+}
+.ph-bg-gray-900 {
+    background-color: $black !important;
+}
+.general-info [class^='et_pb_text_'] {
+    border-right: 0 !important;
+    position: relative;
+}
+.general-info img {
+    margin-bottom: 60px !important;
+}
+#post-19158 > div > div > div > div.et_pb_section.et_pb_section_1.et_section_regular > div > div.et_pb_column.et_pb_column_1_4.et_pb_column_1.et_pb_css_mix_blend_mode_passthrough > div.et_pb_with_border.et_pb_module.et_pb_text.et_pb_text_3.et_pb_text_align_left.et_pb_bg_layout_light,
+#post-19162 > div > div > div > div.et_pb_section.et_pb_section_1.et_section_regular > div > div.et_pb_column.et_pb_column_1_4.et_pb_column_1.et_pb_css_mix_blend_mode_passthrough > div.et_pb_with_border.et_pb_module.et_pb_text.et_pb_text_3.et_pb_text_align_left.et_pb_bg_layout_light,
+#post-21575 > div > div > div > div.et_pb_section.et_pb_section_1.et_section_regular > div > div.et_pb_column.et_pb_column_1_4.et_pb_column_1.et_pb_css_mix_blend_mode_passthrough > div.et_pb_with_border.et_pb_module.et_pb_text.et_pb_text_3.et_pb_text_align_left.et_pb_bg_layout_light {
+    display: none !important;
+}
+.kn-trademark {
+    font-size: 3.2vw !important;
+    position: relative;
+    vertical-align: top;
+    top: -2px;
+    left: -10px;
+}
+.et_pb_section_13 .et_pb_image_wrap img {
+    max-height: 100px !important;
+    display: block !important;
+}
+
+sup {
+    font-style: initial !important;
+    bottom: .5em;
+}
+.flexx {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER LAYOUT END ******* */

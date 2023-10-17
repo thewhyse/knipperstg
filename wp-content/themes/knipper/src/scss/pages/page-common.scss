@@ -1,0 +1,57 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER PAGE COMMON START ******* */
+
+div.hero-section {
+    padding-top: 0 !important;
+    display: flex !important;
+    justify-content:center;
+    align-content:center;
+    div.hero-row {
+        display: flex !important;
+        justify-content:center;
+        align-content: center;
+        flex-wrap: wrap;
+        div.hero-col {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-wrap: wrap;
+            div.hero-heading {
+                display: flex;
+                h1 {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.breadcrumbs.msm {
+    color: $knipper_blue;
+    font-family: $font_r;
+    font-weight: 500;
+    font-size: 16px !important;
+}
+.breadcrumbs a {
+    color: $knipper_blue !important;
+}
+.breadcrumbs a:hover {
+    color: $dark_blue !important;
+    text-decoration: underline;
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER PAGE COMMON END ******* */

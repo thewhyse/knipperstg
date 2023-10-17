@@ -1,0 +1,193 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER FOOTER START ******* */
+
+a.ft-contact-button:hover {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+a.footer-email-address {
+    color: $mid_grey1;
+}
+a.footer-email-address:hover {
+    text-decoration: underline;
+    font-weight: bold;
+    color: $mid_grey1;
+}
+a.footer-terms-link:hover {
+    text-decoration: underline;
+}
+div.icon-row-copy div.et_pb_text_inner a,
+div.icon-row-copy div.et_pb_text_inner p {
+    font-weight: 400 !important;
+}
+#footer-icon-row1,
+#footer-icon-row2,
+#footer-icon-row3,
+#footer-icon-row4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 !important;
+}
+.icon-col-left {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+.icon-col-right {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+footer#main-footer {
+    display: none;
+}
+.et_pb_section_413564 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.et_pb_row_413565,
+.et_pb_row_413570,
+.et_pb_row_413575,
+.et_pb_row_413580 {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.et_pb_column_413566,
+.et_pb_column_413571,
+.et_pb_column_413576,
+.et_pb_column_413581 {
+    width: 25% !important;
+    text-align: center !important;
+}
+.et_pb_column_413568,
+.et_pb_column_413573,
+.et_pb_column_413578,
+.et_pb_column_413583 {
+    width: 75% !important;
+}
+div.row-tricol-footer {
+    width: 100% !important;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+div.row-greylogo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+div.greylogo-col {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 16.66% !important;
+}
+div#col1-greylogo,
+div#col2-greylogo,
+div#col3-greylogo,
+div#col4-greylogo,
+div#col5-greylogo,
+div#col6-greylogo {
+    margin-bottom: 0 !important;
+}
+a.button-git {
+    border-style: none;
+    -webkit-box-shadow: none;
+        box-shadow: none;
+    width: 199px;
+    height: 60px;
+    background-color: $knipper_yellow;
+    border: none;
+    color: $white;
+    font-size: 22px;
+    font-family: $font_r;
+    font-weight: bold;
+    line-height: 31px;
+    outline: none;
+    position: relative;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.diamond-box {
+    height: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+img.diamond-img {
+    margin-right: 15px;
+}
+.copyright-menu-links div.et_pb_text_inner p a {
+    color: $pale_yellow !important;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+div.icon-row-copy div.et_pb_text_inner a,
+div.icon-row-copy div.et_pb_text_inner p {
+    color: $mid_grey1 !important;
+}
+.copyright-menu-links div.et_pb_text_inner p a:hover {
+    text-decoration: underline;
+}
+.footer-menu-paragraph,
+.footer-copyright-paragraph {
+    color: $white;
+    font-weight: 400;
+}
+.copyright-menu-links div.et_pb_text_inner p a:hover {
+    color: $knipper_yellow !important;
+}
+.footer-trademark {
+    right: 7px;
+    position: relative;
+}
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+    .et_pb_row_10.et_pb_row {
+        margin-top: 0px !important;
+    }
+    div.row-greylogo {
+        flex-wrap: wrap;
+    }
+    div.greylogo-col {
+        align-items: center;
+        width: 33.33% !important;
+        height: 55px;
+    }
+    .numbers-heading {
+        font-size: 20px !important;
+        p {
+            margin-top: -15px !important;
+        }
+    }
+    .numbers-copy {
+        top: -40px;
+    }
+}
+
+/* ******* KNIPPER FOOTER END ******* */

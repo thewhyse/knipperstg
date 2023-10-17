@@ -1,0 +1,363 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER BROCHURES PAGE START ******* */
+
+div#et-main-area {
+    div#main-content {
+        article.page {
+            div.entry-content {
+                div#brochure-hero-section {
+                    padding-top: 0 !important;
+                    div#brochure-row-hero {
+                        div#brochure-hero-col {
+
+                        }
+                    }
+                }
+                div#brochure-body-top {
+                    div#brochures-breadcrumb-row {
+                        div#brochures-yoast-breadcrumb {
+                            .breadcrumbs.brochures {
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 16px !important;
+                            }
+                            .breadcrumbs a {
+                                color: $mid_grey1 !important;
+                            }
+                            .breadcrumbs a:hover {
+                                color: $dark_blue !important;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                    div#brochure-row-topbody {
+                        div.brochure-topbody-col {
+                            h2 {
+                                text-align: center;
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 45px !important;
+                                line-height: 54px !important;
+                            }
+                            div#triple-diamonds {
+                            }
+                            div#brochure-jump-links {
+                                max-width: 1050px;
+                                text-align: center;
+                                margin: 0 auto !important;
+                                div.et_pb_text_inner {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    span.brochure-link-span {
+                                        @include medium();
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        padding: 2% 0 1% 0;
+                                        a.brochure-link {
+                                            text-decoration: underline;
+                                        }
+                                                                                                                      .blue {
+                                            color: $knipper_blue;
+                                        }
+                                        .green {
+                                            color: $knipper_green;
+                                        }
+                                        .red {
+                                            color: $knipper_red;
+                                        }
+                                    }
+                                }
+
+                            }
+                            div.body-copy {
+                                max-width: 1150px;
+                                margin: 0 auto !important;
+                                p.p1 {
+                                    font-size: 22px;
+                                    line-height: 32px;
+                                    text-align: center;
+                                    padding: 4% 0 4% 0;
+                                }
+                            }
+                            a#brochure-cta-btn {
+                                margin: 0 auto !important;
+                            }
+                        }
+                    }
+                }
+                div.section-brochures {
+                    padding: 35px 0 60px 0 !important;
+                    div.brochure-row {
+                    div#brochures-corporate,
+                    div#brochures-msm,
+                    div#brochures-custom-phara,
+                    div#brochures-3rd-party {
+                            h3 {
+                                @include medium();
+                                font-size: 30px;
+                                line-height: 37px;
+                                color: $mid_grey1;
+                                padding-bottom: 0;
+                                margin: 40px 0 40px 0;
+                            }
+                            a.mobile-toggle {
+                                display: none;
+                            }
+                        }
+                    }
+                    div.brochure-row {
+                        display: flex;
+                        width: 100%;
+                        max-width: 1360px;
+                        justify-content: flex-start;
+                        align-items: center;
+                        flex-direction: row;
+                        padding: 0 !important;
+                        margin: 0 auto !important;
+                        .et_pb_column {
+                            flex-direction: column;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0;
+                            float: unset;
+                            align-items: flex-start;
+                            text-align: left;
+                            div.brochure-card {
+                                background-color: $white;
+                                padding: 0 0 30px 0;
+                                border-radius: 20px;
+                                overflow: hidden !important;
+                                width: 360px !important;
+                                height: 470px !important;
+                                -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    div.et_pb_text_inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        height: 100%;
+                                        div.brocard-img-wrapper {
+
+                                            img.brocard-img {
+
+                                            }
+                                        }
+                                        div.brocard-content-wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            height: 100%;
+                                            padding-top: 40px;
+                                            h3.brocard-h3 {
+                                                @include bold();
+                                                font-size: 24px;
+                                                line-height: 29px;
+                                                text-align: center;
+                                                margin: 0;
+                                            }
+                                            div.brocard-btn-wrapper {
+                                                text-align: center;
+                                                margin: 0 auto !important;
+                                            }
+                                        }
+                                    }
+                            }
+                            .video-items-module div.brochure-card {
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+                .color {
+                    background-color: $brochure_row;
+                }
+            }
+        }
+    }
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+    div#et-main-area {
+    div#main-content {
+        article.page {
+            div.entry-content {
+                div#brochure-hero-section {
+                    padding-top: 0 !important;
+                    div#brochure-row-hero {
+                        div#brochure-hero-col {
+
+                        }
+                    }
+                }
+                div#brochure-body-top {
+                    div#brochures-breadcrumb-row {
+                        div#brochures-yoast-breadcrumb {
+                            .breadcrumbs.brochures {
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 16px !important;
+                            }
+                            .breadcrumbs a {
+                                color: $mid_grey1 !important;
+                            }
+                            .breadcrumbs a:hover {
+                                color: $dark_blue !important;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                    div#brochure-row-topbody {
+                        div.brochure-topbody-col {
+                            h2 {
+                                text-align: center;
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 45px !important;
+                                line-height: 54px !important;
+                            }
+                            div#triple-diamonds {
+
+                            }
+                            div#brochure-jump-links {
+                                max-width: 1050px;
+                                text-align: center;
+                                margin: 0 auto !important;
+                                div.et_pb_text_inner {
+                                    display: flex;
+                                    justify-content: space-evenly;
+                                    span.brochure-link-span {
+                                        @include medium();
+                                        font-size: 24px;
+                                        line-height: 32px;
+                                        padding: 2% 0 1% 0;
+                                        a.brochure-link {
+                                            text-decoration: underline;
+                                        }
+                                                                                                                      .blue {
+                                            color: $knipper_blue;
+                                        }
+                                        .green {
+                                            color: $knipper_green;
+                                        }
+                                        .red {
+                                            color: $knipper_red;
+                                        }
+                                    }
+                                }
+
+                            }
+                            div.body-copy {
+                                max-width: 1150px;
+                                margin: 0 auto !important;
+                                p.p1 {
+                                    font-size: 22px;
+                                    line-height: 32px;
+                                    text-align: center;
+                                    padding: 4% 0 4% 0;
+                                }
+                            }
+                            a.knipper-btn {
+
+                            }
+                        }
+                    }
+                }
+                div#brochures-section {
+                    div.brochure-row {
+                        flex-direction: column;
+                        padding: 0 !important;
+                        .et_pb_column {
+                            flex-direction: column;
+                            display: flex;
+                            justify-content: center;
+                            margin: 0;
+                            float: unset;
+                            align-items: center;
+                            div#brochures-corporate {
+                                height: 70px;
+                                background-color: $knipper_yellow;
+                                width: 100%;
+                                padding-bottom: 40px !important;
+                                div.et_pb_text_inner {
+                                    display: flex;
+                                    height: 70px;
+                                    align-items: center;
+                                    h3 {
+                                        font-size: 30px;
+                                        line-height: 37px;
+                                        color: $white;
+                                        padding: 0;
+                                    }
+                                }
+                            }
+                            div.brochure-card {
+                                background-color: $white;
+                                padding: 0 0 30px 0;
+                                border-radius: 20px;
+                                overflow: hidden !important;
+                                width: 360px !important;
+                                height: 470px !important;
+                                -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    div.et_pb_text_inner {
+                                        display: flex;
+                                        flex-direction: column;
+                                        height: 100%;
+                                        div.brocard-img-wrapper {
+
+                                            img.brocard-img {
+
+                                            }
+                                        }
+                                        div.brocard-content-wrapper {
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: space-between;
+                                            height: 100%;
+                                            padding-top: 40px;
+                                            h3.brocard-h3 {
+                                                @include bold();
+                                                font-size: 24px;
+                                                line-height: 29px;
+                                                text-align: center;
+                                                margin: 0;
+                                            }
+                                            div.brocard-btn-wrapper {
+                                                text-align: center;
+                                                margin: 0 auto !important;
+                                            }
+                                        }
+                                    }
+                            }
+                            .video-items-module div.brochure-card {
+                                padding: 0;
+                            }
+                        }
+                    }
+                    .color {
+                        background-color: $brochure_row;
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER BROCHURES PAGE END ******* */

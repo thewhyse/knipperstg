@@ -1,0 +1,153 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER MENU START ******* */
+
+
+/* *********** MEGA MENU *********** */
+ul#top-menu.nav .megamenu-col-1 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+ul#top-menu.nav .megamenu-col-2 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+ul#top-menu.nav .megamenu-col-3 {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+nav#top-menu-nav ul#top-menu.nav li.mega-menu.blue:hover {
+    background-color: $knipper_blue;
+}
+nav#top-menu-nav ul#top-menu.nav li.mega-menu.green:hover {
+    background-color: $knipper_green;
+}
+nav#top-menu-nav ul#top-menu.nav li.mega-menu.red:hover {
+    background-color: $knipper_red;
+}
+li.mega-menu ul.sub-menu li.menu-item a {
+    font-size: 20px !important;
+    color: $mid_grey1 !important;
+    line-height: 22px !important;
+    font-weight: 500 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+li.mega-menu ul.sub-menu li.submenu-indent a {
+    margin-left: 30px !important;
+}
+ul#mobile_menu.et_mobile_menu li.mega-menu ul.sub-menu li.megamenu-col-2 li.submenu-indent a {
+    margin-left: 0px !important;
+}
+#top-menu li.mega-menu>ul.sub-menu {
+    padding: 40px 50px;
+    min-width: 840px;
+    top: 115px;
+    -webkit-filter: drop-shadow(0px 8px 10px $mid_grey2);
+            filter: drop-shadow(0px 8px 10px $mid_grey2);
+    border: none;
+}
+#top-menu li.mega-menu.blue>ul.sub-menu {
+    min-width: 940px;
+}
+#top-menu li.mega-menu.green>ul.sub-menu {
+    min-width: 331.62px;
+}
+#top-menu li.mega-menu > ul > li.menu-red-row > a {
+    width: 100% !important;
+}
+#top-menu li.mega-menu.red>ul.sub-menu > li.menu-red-row,
+#top-menu li.mega-menu.green>ul.sub-menu > li.menu-green-row {
+    width: 100% !important;
+}
+#top-menu li.mega-menu.blue>ul.sub-menu > li.menu-item,
+#top-menu li.mega-menu.red>ul.sub-menu > li.menu-item,
+#top-menu li.mega-menu.green>ul.sub-menu > li.menu-item {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+#top-menu li.mega-menu.green>ul.sub-menu > li.menu-item {
+    width: 100%;
+}
+#top-menu li.mega-menu.red>ul.sub-menu {
+    min-width: 450px;
+}
+#top-menu li.mega-menu li li,
+#top-menu li.mega-menu li > a {
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    color: $mid_grey1 !important;
+    background-color: transparent !important;
+}
+#top-menu li.mega-menu.blue li>a:hover {
+    color: $knipper_blue !important;
+    font-weight: bold !important;
+}
+#top-menu li.mega-menu.green li>a:hover {
+    color: $knipper_green !important;
+    font-weight: bold !important;
+}
+#top-menu li.mega-menu.red li>a:hover {
+    color: $knipper_red !important;
+    font-weight: bold !important;
+}
+#top-menu li.mega-menu>ul>li>a:first-child {
+    border: none !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+}
+li.mega-menu.blue ul.sub-menu li.menu-item a:hover {
+    color: $knipper_blue !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+li.mega-menu.red ul.sub-menu li.menu-item a:hover {
+    color: $knipper_red !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+li.mega-menu.green ul.sub-menu li.menu-item a:hover {
+    color: $knipper_green !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+ul#mobile_menu li.mega-menu.blue ul.sub-menu li.menu-item a:hover {
+    color: $knipper_blue !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+ul#mobile_menu li.mega-menu.red ul.sub-menu li.menu-item a:hover {
+    color: $knipper_red !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+ul#mobile_menu li.mega-menu.green ul.sub-menu li.menu-item a:hover {
+    color: $knipper_green !important;
+    font-weight: bold !important;
+    background: none !important;
+}
+#top-menu li.mega-menu.blue.mega-menu-parent-3>ul>li.megamenu-col-3 {
+    padding-left: 6% !important;
+}
+#top-menu li.mega-menu.red>ul {
+    left: unset !important;
+    right: 0px !important;
+}
+#top-menu a {
+    transition: none !important;
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 768px) {
+}
+@media all and (max-width: 576px) {
+}
+@media all and (max-width: 480px) {
+}
+@media all and (max-width: 320px) {
+}
+
+/* ******* KNIPPER MENU END ******* */
