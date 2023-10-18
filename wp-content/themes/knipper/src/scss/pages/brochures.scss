@@ -92,10 +92,19 @@ div#et-main-area {
                 }
                 div.section-brochures {
                     padding: 35px 0 60px 0 !important;
+                    .text-blue{
+                        color: #003087 !important;
+                    }
+                    .text-green{
+                        color: #74AA50 !important;
+                    }
+                    .text-red{
+                        color: #9C2743 !important;
+                    }
                     div.brochure-row {
                     div#brochures-corporate,
                     div#brochures-msm,
-                    div#brochures-custom-phara,
+                    div#brochures-custom-pharm,
                     div#brochures-3rd-party {
                             h3 {
                                 @include medium();
@@ -151,7 +160,7 @@ div#et-main-area {
                                             flex-direction: column;
                                             justify-content: space-between;
                                             height: 100%;
-                                            padding-top: 40px;
+                                            padding: 40px 10px 0;
                                             h3.brocard-h3 {
                                                 @include bold();
                                                 font-size: 24px;
