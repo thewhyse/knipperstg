@@ -40,7 +40,7 @@ div#et-main-area {
                                 text-align: center;
                                 color: $mid_grey1;
                                 font-family: $font_r;
-                                font-weight: 500;
+                                font-weight: 600;
                                 font-size: 45px !important;
                                 line-height: 54px !important;
                             }
@@ -55,13 +55,13 @@ div#et-main-area {
                                     justify-content: space-evenly;
                                     span.brochure-link-span {
                                         @include medium();
-                                        font-size: 24px;
+                                        font-size: 24px !important;
                                         line-height: 32px;
                                         padding: 2% 0 1% 0;
                                         a.brochure-link {
                                             text-decoration: underline;
                                         }
-                                                                                                                      .blue {
+                                        .blue {
                                             color: $knipper_blue;
                                         }
                                         .green {
@@ -91,21 +91,22 @@ div#et-main-area {
                     }
                 }
                 div.section-brochures {
-                    padding: 35px 0 60px 0 !important;
+                    padding: 35px 0 20px 0 !important;
                     .text-blue{
-                        color: #003087 !important;
+                        color: $knipper_blue !important;
                     }
                     .text-green{
-                        color: #74AA50 !important;
+                        color: $knipper_green !important;
                     }
                     .text-red{
-                        color: #9C2743 !important;
+                        color: $knipper_red !important;
                     }
                     div.brochure-row {
-                    div#brochures-corporate,
-                    div#brochures-msm,
-                    div#brochures-custom-pharm,
-                    div#brochures-3rd-party {
+                        div#brochures-corporate,
+                        div#brochures-msm,
+                        div#brochures-custom-pharm,
+                        div#brochures-3rd-party {
+                        width: 100%;
                             h3 {
                                 @include medium();
                                 font-size: 30px;
@@ -123,28 +124,41 @@ div#et-main-area {
                         display: flex;
                         width: 100%;
                         max-width: 1360px;
-                        justify-content: flex-start;
-                        align-items: center;
+                        justify-content: space-between;
+                        align-items: flex-start;
                         flex-direction: row;
                         padding: 0 !important;
                         margin: 0 auto !important;
+                        div.brochure-col-left {
+                            align-items: flex-start;
+                        }
+                        div.brochure-col-center {
+                            align-items: center;
+                        }
+                        div.brochure-col-right {
+                            align-items: flex-end;
+                        }
                         .et_pb_column {
                             flex-direction: column;
                             display: flex;
                             justify-content: center;
                             margin: 0;
                             float: unset;
-                            align-items: flex-start;
-                            text-align: left;
+                            align-items: center;
+                            text-align: center;
+                            width: 100%;
                             div.brochure-card {
                                 background-color: $white;
                                 padding: 0 0 30px 0;
                                 border-radius: 20px;
                                 overflow: hidden !important;
-                                width: 360px !important;
-                                height: 470px !important;
+                                width: 100% !important;
+                                height: 100% !important;
+                                max-width: 360px !important;
+                                max-height: 470px !important;
                                 -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                 box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                margin-bottom: 40px !important;
                                     div.et_pb_text_inner {
                                         display: flex;
                                         flex-direction: column;
@@ -158,19 +172,29 @@ div#et-main-area {
                                         div.brocard-content-wrapper {
                                             display: flex;
                                             flex-direction: column;
-                                            justify-content: space-between;
+                                            justify-content: center;
                                             height: 100%;
-                                            padding: 40px 10px 0;
+                                            padding: 0;
+                                            align-items: center;
                                             h3.brocard-h3 {
                                                 @include bold();
                                                 font-size: 24px;
                                                 line-height: 29px;
                                                 text-align: center;
                                                 margin: 0;
+                                                height: 87px;
+                                                padding: 0;
+                                                display: flex;
+                                                justify-content: center;
+                                                align-items: center;
+                                                padding-top: 20%;
+                                                padding-bottom: 38%;
                                             }
                                             div.brocard-btn-wrapper {
                                                 text-align: center;
                                                 margin: 0 auto !important;
+                                                position: absolute;
+                                                bottom: 0;
                                             }
                                         }
                                     }
@@ -184,183 +208,458 @@ div#et-main-area {
                 .color {
                     background-color: $brochure_row;
                 }
+                div#brochures-3rd-party-section {
+                    padding: 35px 0 0 0 !important;
+                }
             }
         }
     }
 }
-
-
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1400px) {
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row {
+        width: 88%;
+        max-width: 1200px;
+    }
 }
-@media all and (max-width: 768px) {
+@media all and (max-width: 1250px) {
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row {
+        width: 95%;
+        max-width: 1200px;
+    }
+    div#et-main-area div#main-content article.page div.entry-content div#brochure-body-top div#brochure-row-topbody div.brochure-topbody-col div#brochure-jump-links div.et_pb_text_inner span.brochure-link-span {
+    font-size: 20px !important;
+    line-height: 32px;
+    padding: 2% 0 1% 0;
+    }
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row .et_pb_column {
+        padding: 2%;
+    }
+}
+@media all and (max-width: 1024px) {
     div#et-main-area {
-    div#main-content {
-        article.page {
-            div.entry-content {
-                div#brochure-hero-section {
-                    padding-top: 0 !important;
-                    div#brochure-row-hero {
-                        div#brochure-hero-col {
+        div#main-content {
+            article.page {
+                div.entry-content {
+                    div#brochure-hero-section {
+                        padding-top: 0 !important;
+                        div#brochure-row-hero {
+                            div#brochure-hero-col {
 
+                            }
                         }
                     }
-                }
-                div#brochure-body-top {
-                    div#brochures-breadcrumb-row {
-                        div#brochures-yoast-breadcrumb {
-                            .breadcrumbs.brochures {
-                                color: $mid_grey1;
-                                font-family: $font_r;
-                                font-weight: 500;
-                                font-size: 16px !important;
-                            }
-                            .breadcrumbs a {
-                                color: $mid_grey1 !important;
-                            }
-                            .breadcrumbs a:hover {
-                                color: $dark_blue !important;
-                                text-decoration: underline;
-                            }
-
-                        }
-                    }
-                    div#brochure-row-topbody {
-                        div.brochure-topbody-col {
-                            h2 {
-                                text-align: center;
-                                color: $mid_grey1;
-                                font-family: $font_r;
-                                font-weight: 500;
-                                font-size: 45px !important;
-                                line-height: 54px !important;
-                            }
-                            div#triple-diamonds {
-
-                            }
-                            div#brochure-jump-links {
-                                max-width: 1050px;
-                                text-align: center;
-                                margin: 0 auto !important;
-                                div.et_pb_text_inner {
-                                    display: flex;
-                                    justify-content: space-evenly;
-                                    span.brochure-link-span {
-                                        @include medium();
-                                        font-size: 24px;
-                                        line-height: 32px;
-                                        padding: 2% 0 1% 0;
-                                        a.brochure-link {
-                                            text-decoration: underline;
-                                        }
-                                                                                                                      .blue {
-                                            color: $knipper_blue;
-                                        }
-                                        .green {
-                                            color: $knipper_green;
-                                        }
-                                        .red {
-                                            color: $knipper_red;
-                                        }
-                                    }
+                    div#brochure-body-top {
+                        div#brochures-breadcrumb-row {
+                            div#brochures-yoast-breadcrumb {
+                                .breadcrumbs.brochures {
+                                    color: $mid_grey1;
+                                    font-family: $font_r;
+                                    font-weight: 500;
+                                    font-size: 16px !important;
+                                }
+                                .breadcrumbs a {
+                                    color: $mid_grey1 !important;
+                                }
+                                .breadcrumbs a:hover {
+                                    color: $dark_blue !important;
+                                    text-decoration: underline;
                                 }
 
                             }
-                            div.body-copy {
-                                max-width: 1150px;
-                                margin: 0 auto !important;
-                                p.p1 {
-                                    font-size: 22px;
-                                    line-height: 32px;
+                        }
+                        div#brochure-row-topbody {
+                            div.brochure-topbody-col {
+                                h2 {
                                     text-align: center;
-                                    padding: 4% 0 4% 0;
+                                    color: $mid_grey1;
+                                    font-family: $font_r;
+                                    font-weight: 600;
+                                    font-size: 36px !important;
+                                    line-height: 46px !important;
                                 }
-                            }
-                            a.knipper-btn {
-
-                            }
-                        }
-                    }
-                }
-                div#brochures-section {
-                    div.brochure-row {
-                        flex-direction: column;
-                        padding: 0 !important;
-                        .et_pb_column {
-                            flex-direction: column;
-                            display: flex;
-                            justify-content: center;
-                            margin: 0;
-                            float: unset;
-                            align-items: center;
-                            div#brochures-corporate {
-                                height: 70px;
-                                background-color: $knipper_yellow;
-                                width: 100%;
-                                padding-bottom: 40px !important;
-                                div.et_pb_text_inner {
-                                    display: flex;
-                                    height: 70px;
-                                    align-items: center;
-                                    h3 {
-                                        font-size: 30px;
-                                        line-height: 37px;
-                                        color: $white;
-                                        padding: 0;
-                                    }
+                                div#triple-diamonds {
                                 }
-                            }
-                            div.brochure-card {
-                                background-color: $white;
-                                padding: 0 0 30px 0;
-                                border-radius: 20px;
-                                overflow: hidden !important;
-                                width: 360px !important;
-                                height: 470px !important;
-                                -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                div#brochure-jump-links {
+                                    max-width: 1050px;
+                                    text-align: center;
+                                    margin: 0 auto !important;
                                     div.et_pb_text_inner {
                                         display: flex;
-                                        flex-direction: column;
-                                        height: 100%;
-                                        div.brocard-img-wrapper {
-
-                                            img.brocard-img {
-
+                                        justify-content: space-evenly;
+                                        span.brochure-link-span {
+                                            @include medium();
+                                            font-size: 24px !important;
+                                            line-height: 32px;
+                                            padding: 2% 0 1% 0;
+                                            a.brochure-link {
+                                                text-decoration: underline;
                                             }
-                                        }
-                                        div.brocard-content-wrapper {
-                                            display: flex;
-                                            flex-direction: column;
-                                            justify-content: space-between;
-                                            height: 100%;
-                                            padding-top: 40px;
-                                            h3.brocard-h3 {
-                                                @include bold();
-                                                font-size: 24px;
-                                                line-height: 29px;
-                                                text-align: center;
-                                                margin: 0;
+                                            .blue {
+                                                color: $knipper_blue;
                                             }
-                                            div.brocard-btn-wrapper {
-                                                text-align: center;
-                                                margin: 0 auto !important;
+                                            .green {
+                                                color: $knipper_green;
+                                            }
+                                            .red {
+                                                color: $knipper_red;
                                             }
                                         }
                                     }
+
+                                }
+                                div.body-copy {
+                                    max-width: 776px;
+                                    margin: 0 auto !important;
+                                    p.p1 {
+                                        font-size: 22px;
+                                        line-height: 32px;
+                                        text-align: center;
+                                        padding: 4% 0 4% 0;
+                                    }
+                                }
+                                a#brochure-cta-btn {
+                                    margin: 0 auto !important;
+                                }
                             }
-                            .video-items-module div.brochure-card {
-                                padding: 0;
+                        }
+                    }
+                    div.section-brochures {
+                        padding: 35px 0 20px 0 !important;
+                        .text-blue{
+                            color: $knipper_blue !important;
+                        }
+                        .text-green{
+                            color: $knipper_green !important;
+                        }
+                        .text-red{
+                            color: $knipper_red !important;
+                        }
+                        div.brochure-row {
+                            div#brochures-corporate,
+                            div#brochures-msm,
+                            div#brochures-custom-pharm,
+                            div#brochures-3rd-party {
+                            width: 100%;
+                                h3 {
+                                    @include medium();
+                                    font-size: 30px;
+                                    line-height: 37px;
+                                    color: $mid_grey1;
+                                    padding-bottom: 0;
+                                    margin: 40px 0 40px 0;
+                                }
+                                a.mobile-toggle {
+                                    display: none;
+                                }
+                            }
+                        }
+                        div.brochure-row {
+                            display: flex;
+                            width: 100%;
+                            max-width: 776px;
+                            justify-content: space-between;
+                            align-items: flex-start;
+                            flex-direction: row;
+                            padding: 0 !important;
+                            margin: 0 auto !important;
+                            flex-wrap: wrap ;
+                            div.brochure-col-left,
+                            div.brochure-col-center,
+                            div.brochure-col-right {
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 50%;
+                            }
+                            .et_pb_column {
+                                flex-direction: column;
+                                display: flex;
+                                justify-content: center;
+                                margin: 0;
+                                float: unset;
+                                align-items: center;
+                                text-align: center;
+                                width: 100%;
+                                div.brochure-card {
+                                    background-color: $white;
+                                    padding: 0 0 30px 0;
+                                    border-radius: 20px;
+                                    overflow: hidden !important;
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    max-width: 323px !important;
+                                    max-height: 420px !important;
+                                    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    margin-bottom: 40px !important;
+                                        div.et_pb_text_inner {
+                                            display: flex;
+                                            flex-direction: column;
+                                            height: 100%;
+                                            div.brocard-img-wrapper {
+
+                                                img.brocard-img {
+
+                                                }
+                                            }
+                                            div.brocard-content-wrapper {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                height: 100%;
+                                                padding: 0;
+                                                align-items: center;
+                                                h3.brocard-h3 {
+                                                    @include bold();
+                                                    font-size: 24px;
+                                                    line-height: 29px;
+                                                    text-align: center;
+                                                    margin: 0;
+                                                    height: 87px;
+                                                    padding: 0;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding-top: 20%;
+                                                    padding-bottom: 38%;
+                                                }
+                                                div.brocard-btn-wrapper {
+                                                    text-align: center;
+                                                    margin: 0 auto !important;
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                }
+                                            }
+                                        }
+                                }
+                                .video-items-module div.brochure-card {
+                                    padding: 0;
+                                }
                             }
                         }
                     }
                     .color {
                         background-color: $brochure_row;
                     }
+                    div#brochures-3rd-party-section {
+                        padding: 35px 0 0 0 !important;
+                    }
                 }
             }
         }
     }
 }
+@media all and (max-width: 768px) {
+    div#et-main-area {
+        div#main-content {
+            article.page {
+                div.entry-content {
+                    div#brochure-hero-section {
+                        padding-top: 0 !important;
+                        div#brochure-row-hero {
+                            div#brochure-hero-col {
+
+                            }
+                        }
+                    }
+                    div#brochure-body-top {
+                        div#brochures-breadcrumb-row {
+                            div#brochures-yoast-breadcrumb {
+                                .breadcrumbs.brochures {
+                                    color: $mid_grey1;
+                                    font-family: $font_r;
+                                    font-weight: 500;
+                                    font-size: 16px !important;
+                                }
+                                .breadcrumbs a {
+                                    color: $mid_grey1 !important;
+                                }
+                                .breadcrumbs a:hover {
+                                    color: $dark_blue !important;
+                                    text-decoration: underline;
+                                }
+
+                            }
+                        }
+                        div#brochure-row-topbody {
+                            div.brochure-topbody-col {
+                                h2 {
+                                    text-align: center;
+                                    color: $mid_grey1;
+                                    font-family: $font_r;
+                                    font-weight: 600;
+                                    font-size: 36px !important;
+                                    line-height: 46px !important;
+                                }
+                                div#triple-diamonds {
+                                }
+                                div#brochure-jump-links {
+                                    display: none;
+                                    visibility: hidden;
+                                    opacity: 0;
+                                    div.et_pb_text_inner {
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        span.brochure-link-span {
+                                            @include medium();
+                                            font-size: 24px !important;
+                                            line-height: 32px;
+                                            padding: 2% 0 1% 0;
+                                            a.brochure-link {
+                                                text-decoration: underline;
+                                            }
+                                            .blue {
+                                                color: $knipper_blue;
+                                            }
+                                            .green {
+                                                color: $knipper_green;
+                                            }
+                                            .red {
+                                                color: $knipper_red;
+                                            }
+                                        }
+                                    }
+
+                                }
+                                div.body-copy {
+                                    max-width: 776px;
+                                    margin: 0 auto !important;
+                                    p.p1 {
+                                        font-size: 22px;
+                                        line-height: 32px;
+                                        text-align: center;
+                                        padding: 4% 0 4% 0;
+                                    }
+                                }
+                                a#brochure-cta-btn {
+                                    margin: 0 auto !important;
+                                }
+                            }
+                        }
+                    }
+                    div.section-brochures {
+                        padding: 35px 0 20px 0 !important;
+                        .text-blue{
+                            color: $knipper_blue !important;
+                        }
+                        .text-green{
+                            color: $knipper_green !important;
+                        }
+                        .text-red{
+                            color: $knipper_red !important;
+                        }
+                        div.brochure-row {
+                            div#brochures-corporate,
+                            div#brochures-msm,
+                            div#brochures-custom-pharm,
+                            div#brochures-3rd-party {
+                            width: 100%;
+                                h3 {
+                                    @include medium();
+                                    font-size: 30px;
+                                    line-height: 37px;
+                                    color: $mid_grey1;
+                                    padding-bottom: 0;
+                                    margin: 40px 0 40px 0;
+                                }
+                                a.mobile-toggle {
+                                    display: none;
+                                }
+                            }
+                        }
+                        div.brochure-row {
+                            display: flex;
+                            width: 100%;
+                            max-width: 776px;
+                            justify-content: space-between;
+                            align-items: center;
+                            flex-direction: column;
+                            padding: 0 !important;
+                            margin: 0 auto !important;
+                            flex-wrap: wrap;
+                            div.brochure-col-left,
+                            div.brochure-col-center,
+                            div.brochure-col-right {
+                                align-items: center;
+                                justify-content: space-between;
+                                width: 50%;
+                            }
+                            .et_pb_column {
+                                flex-direction: column;
+                                display: flex;
+                                justify-content: center;
+                                margin: 0;
+                                float: unset;
+                                align-items: center;
+                                text-align: center;
+                                width: 100%;
+                                div.brochure-card {
+                                    background-color: $white;
+                                    padding: 0 0 30px 0;
+                                    border-radius: 20px;
+                                    overflow: hidden !important;
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    max-width: 323px !important;
+                                    max-height: 420px !important;
+                                    -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+                                    margin-bottom: 40px !important;
+                                        div.et_pb_text_inner {
+                                            display: flex;
+                                            flex-direction: column;
+                                            height: 100%;
+                                            div.brocard-img-wrapper {
+
+                                                img.brocard-img {
+
+                                                }
+                                            }
+                                            div.brocard-content-wrapper {
+                                                display: flex;
+                                                flex-direction: column;
+                                                justify-content: center;
+                                                height: 100%;
+                                                padding: 0;
+                                                align-items: center;
+                                                h3.brocard-h3 {
+                                                    @include bold();
+                                                    font-size: 24px;
+                                                    line-height: 29px;
+                                                    text-align: center;
+                                                    margin: 0;
+                                                    height: 87px;
+                                                    padding: 0;
+                                                    display: flex;
+                                                    justify-content: center;
+                                                    align-items: center;
+                                                    padding-top: 20%;
+                                                    padding-bottom: 38%;
+                                                }
+                                                div.brocard-btn-wrapper {
+                                                    text-align: center;
+                                                    margin: 0 auto !important;
+                                                    position: absolute;
+                                                    bottom: 0;
+                                                }
+                                            }
+                                        }
+                                }
+                                .video-items-module div.brochure-card {
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                    .color {
+                        background-color: $brochure_row;
+                    }
+                    div#brochures-3rd-party-section {
+                        padding: 35px 0 0 0 !important;
+                    }
+                }
+            }
+        }
+    }
 }
 @media all and (max-width: 576px) {
 }
