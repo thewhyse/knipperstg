@@ -532,12 +532,16 @@ div#et-main-area {
                                 }
                                 a#brochure-cta-btn {
                                     margin: 0 auto !important;
+                                    max-width: 80%;
+                                    background-size: cover;
+                                    font-size: 18px;
+                                    line-height: 20px !important;
                                 }
                             }
                         }
                     }
                     div.section-brochures {
-                        padding: 35px 0 20px 0 !important;
+                        padding: 0px 0 0px 0 !important;
                         .text-blue{
                             color: $knipper_blue !important;
                         }
@@ -555,16 +559,85 @@ div#et-main-area {
                             width: 100%;
                                 h3 {
                                     @include medium();
-                                    font-size: 30px;
+                                    font-size: 20px;
                                     line-height: 37px;
                                     color: $mid_grey1;
                                     padding-bottom: 0;
-                                    margin: 40px 0 40px 0;
+                                    margin: 0;
+                                    font-weight: 400 !important;
                                 }
                                 a.mobile-toggle {
-                                    display: none;
+                                    display: block;
                                 }
                             }
+                        }
+                        .brochure-heading-row {
+                            padding: 0;
+                            display: flex;
+                            justify-content: center;
+                            height: 70px;
+                            align-items: center;
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 400!important;
+                            color: #fff;
+                            
+                            .mobile-toggle{
+                                width: 100px;
+                                height: 100%;
+                                padding: 0!important;
+                                max-height: 70px;
+                                border: none;
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+                                z-index: 999;
+                                background-color: transparent;
+                                &:after{
+                                    content: "";
+                                    position: absolute;
+                                    top: 31px;
+                                    right: 20px;
+                                    margin-left: 0;
+                                    margin-top: 0;
+                                    width: 0;
+                                    z-index: 1;
+                                    height: 0;
+                                    border-bottom: solid 8px #fff;
+                                    border-left: solid 8px transparent;
+                                    border-right: solid 8px transparent;
+                                    transform: rotate(180deg);
+                                    transition: all .5s ease-in-out;
+                                }
+                            }
+                            h3{
+                                color: #fff !important;
+                                font-size: 20px;
+                                font-weight: 400 !important;
+                                position: absolute;
+                                top: 10px;
+                            }
+                        }
+                        .brochure-heading-row.open-row{
+                            .mobile-toggle{
+                                
+                                &:after{
+                                    transform: rotate(0deg);
+                                    content: '';
+                                }
+                            }
+                        }
+                        .brochure-heading-row.mobile-yellow{
+                            background-color: $knipper-yellow;
+                        }
+                        .brochure-heading-row.mobile-blue{
+                            background-color: $knipper-blue;
+                        }
+                        .brochure-heading-row.mobile-green{
+                            background-color: $knipper-green;
+                        }
+                        .brochure-heading-row.mobile-red{
+                            background-color: $knipper-red;
                         }
                         div.brochure-row {
                             display: flex;
@@ -573,7 +646,7 @@ div#et-main-area {
                             justify-content: space-between;
                             align-items: center;
                             flex-direction: column;
-                            padding: 0 !important;
+                            padding: 0 20px !important;
                             margin: 0 auto !important;
                             flex-wrap: wrap;
                             div.brochure-col-left,
@@ -619,7 +692,7 @@ div#et-main-area {
                                                 flex-direction: column;
                                                 justify-content: center;
                                                 height: 100%;
-                                                padding: 0;
+                                                padding: 0px 10px;
                                                 align-items: center;
                                                 h3.brocard-h3 {
                                                     @include bold();
@@ -649,12 +722,15 @@ div#et-main-area {
                                 }
                             }
                         }
+                        div.brochure-row.brochure-content-row {
+                            display: none;
+                        }
                     }
                     .color {
                         background-color: $brochure_row;
                     }
                     div#brochures-3rd-party-section {
-                        padding: 35px 0 0 0 !important;
+                        padding: 0px 0 0 0 !important;
                     }
                 }
             }
