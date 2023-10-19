@@ -570,6 +570,12 @@ div#et-main-area {
                                     padding-bottom: 0;
                                     margin: 0;
                                     font-weight: 400 !important;
+                                    display: flex;
+                                    height: 70px;
+                                    top: 0;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding: 0px;
                                 }
                                 a.mobile-toggle {
                                     display: block;
@@ -586,7 +592,7 @@ div#et-main-area {
                             line-height: 24px;
                             font-weight: 400!important;
                             color: #fff;
-                            
+
                             .mobile-toggle{
                                 width: 100px;
                                 height: 100%;
@@ -625,7 +631,7 @@ div#et-main-area {
                         }
                         .video-heading-row.open-row{
                             .mobile-toggle{
-                                
+
                                 &:after{
                                     transform: rotate(0deg);
                                     content: '';
@@ -747,6 +753,10 @@ div#et-main-area {
 @media all and (max-width: 480px) {
 }
 @media all and (max-width: 320px) {
+    div#et-main-area div#main-content article.page div.entry-content div.section-videos div.video-row div#videos-msm h3 {
+        line-height: 20px !important;
+    }
 }
+
 
 /* ******* KNIPPER VIDEoS PAGE END ******* */
