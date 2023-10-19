@@ -575,7 +575,6 @@ div#et-main-area {
                                     top: 0;
                                     justify-content: center;
                                     align-items: center;
-                                    padding: 0px;
                                 }
                                 a.mobile-toggle {
                                     display: block;
@@ -676,6 +675,7 @@ div#et-main-area {
                                 align-items: center;
                                 text-align: center;
                                 width: 100%;
+                                padding: 0;
                                 div.video-card {
                                     background-color: $white;
                                     padding: 0 0 30px 0;
