@@ -730,6 +730,10 @@ div#et-main-area {
                             display: none;
                             padding: 40px 20px 0 !important;
                         }
+                        div.case-study-row.case-study-content-row.active-content {
+                            display: flex;
+                            
+                        }
                     }
                     .color {
                         background-color: $brochure_row;
