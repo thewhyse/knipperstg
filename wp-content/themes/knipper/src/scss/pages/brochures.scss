@@ -570,6 +570,12 @@ div#et-main-area {
                                     padding-bottom: 0;
                                     margin: 0;
                                     font-weight: 400 !important;
+                                    font-family: Roboto,Helvetica,Arial,Lucida,sans-serif;
+                                    display: flex;
+                                    height: 70px;
+                                    top: 0;
+                                    justify-content: center;
+                                    align-items: center;
                                 }
                                 a.mobile-toggle {
                                     display: block;
@@ -586,7 +592,7 @@ div#et-main-area {
                             line-height: 24px;
                             font-weight: 400!important;
                             color: #fff;
-                            
+
                             .mobile-toggle{
                                 width: 100px;
                                 height: 100%;
@@ -625,7 +631,7 @@ div#et-main-area {
                         }
                         .brochure-heading-row.open-row{
                             .mobile-toggle{
-                                
+
                                 &:after{
                                     transform: rotate(0deg);
                                     content: '';
@@ -670,6 +676,7 @@ div#et-main-area {
                                 align-items: center;
                                 text-align: center;
                                 width: 100%;
+                                padding: 0;
                                 div.brochure-card {
                                     background-color: $white;
                                     padding: 0 0 30px 0;
