@@ -754,6 +754,9 @@ div#et-main-area {
 @media all and (max-width: 480px) {
 }
 @media all and (max-width: 320px) {
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-corporate h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-msm h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-custom-pharm h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-3rd-party h3 {
+        line-height: 20px !important;
+    }
 }
 
 /* ******* KNIPPER BROCHURES PAGE END ******* */
