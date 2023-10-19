@@ -187,8 +187,7 @@ div#et-main-area {
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                padding-top: 20%;
-                                                padding-bottom: 38%;
+                                                padding: 20% 10px 38%;
                                             }
                                             div.brocard-btn-wrapper {
                                                 text-align: center;
@@ -736,6 +735,7 @@ div#et-main-area {
                         }
                         div.brochure-row.brochure-content-row {
                             display: none;
+                            padding: 40px 20px 0 !important;
                         }
                     }
                     .color {
