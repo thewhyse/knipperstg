@@ -183,9 +183,9 @@ div#et-main-area {
                                             padding: 0;
                                             align-items: center;
                                             h3.cscard-h3 {
-                                                @include bold();
-                                                font-size: 24px;
-                                                line-height: 29px;
+                                                @include medium();
+                                                font-size: 22px;
+                                                line-height: 32px;
                                                 text-align: center;
                                                 margin: 0;
                                                 height: 87px;
@@ -420,9 +420,7 @@ div#et-main-area {
                                                 padding: 0;
                                                 align-items: center;
                                                 h3.cscard-h3 {
-                                                    @include bold();
-                                                    font-size: 24px;
-                                                    line-height: 29px;
+                                                    
                                                     text-align: center;
                                                     margin: 0;
                                                     height: 87px;
@@ -710,9 +708,7 @@ div#et-main-area {
                                                 padding: 0px 10px;
                                                 align-items: center;
                                                 h3.cscard-h3 {
-                                                    @include bold();
-                                                    font-size: 24px;
-                                                    line-height: 29px;
+                                                    
                                                     text-align: center;
                                                     margin: 0;
                                                     height: 87px;
