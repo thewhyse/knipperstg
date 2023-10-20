@@ -229,6 +229,156 @@ div#et-main-area {
         max-width: 1200px;
     }
 }
+@media all and (max-width: 1280px) {
+
+div#et-main-area {
+        div#main-content {
+            article.page {
+                div.entry-content {
+                    div#video-hero-section {
+                        padding-top: 0 !important;
+                        div#videos-row-hero {
+                            div#video-hero-col {
+                            	div.hero-heading{
+                                   
+                                }
+                            }
+                        }
+                    }
+                    div#video-body-top {
+                        div#videos-breadcrumb-row {
+                            div#videos-yoast-breadcrumb {
+                                .breadcrumbs.videos {
+                                    
+                                }
+                                .breadcrumbs a {
+                                    
+                                }
+                                .breadcrumbs a:hover {
+                                    
+                                }
+
+                            }
+                        }
+                        div#video-row-topbody {
+                            div.video-topbody-col {
+                                h2 {
+                                    
+                                }
+                                div#triple-diamonds {
+                                }
+                                div#video-jump-links {
+                                    
+                                    div.et_pb_text_inner {
+                                        
+                                        span.video-link-span {
+                                            
+                                            a.video-link {
+                                                text-decoration: underline;
+                                            }
+                                            .blue {
+                                                color: $knipper_blue;
+                                            }
+                                            .green {
+                                                color: $knipper_green;
+                                            }
+                                            .red {
+                                                color: $knipper_red;
+                                            }
+                                        }
+                                    }
+
+                                }
+                                div.body-copy {
+                                    
+                                    p.p1 {
+                                        
+                                    }
+                                }
+                                a#video-cta-btn {
+                                    
+                                }
+                            }
+                        }
+                    }
+                    div.section-videos {
+                       
+                        .text-blue{
+                            color: $knipper_blue !important;
+                        }
+                        .text-green{
+                            color: $knipper_green !important;
+                        }
+                        .text-red{
+                            color: $knipper_red !important;
+                        }
+                        div.video-row {
+                            div#videos-corporate,
+                            div#videos-msm,
+                            div#videos-custom-pharm,
+                            div#videos-3rd-party {
+                            
+                                h3 {
+                                   
+                                }
+                                a.mobile-toggle {
+                                   
+                                }
+                            }
+                        }
+                        div.video-row {
+                            
+                           
+                            div.video-col-left,
+                            div.video-col-center,
+                            div.video-col-right {
+                                
+                            }
+                            .et_pb_column {
+                                
+                                div.video-card {
+                                    
+                                    width: 95% !important;
+                                    height: 100% !important;
+                                    
+                                        div.et_pb_text_inner {
+                                            
+                                            div.vidcard-img-wrapper {
+
+                                                img.vidcard-img {
+
+                                                }
+                                            }
+                                            div.vidcard-content-wrapper {
+                                                
+                                                h3.vidcard-h3 {
+                                                    
+                                                    
+                                                }
+                                                div.vidcard-btn-wrapper {
+                                                    
+                                                }
+                                            }
+                                        }
+                                }
+                                .video-items-module div.video-card {
+                                   
+                                }
+                            }
+                        }
+                    }
+                    .color {
+                       
+                    }
+                    div#videos-3rd-party-section {
+                       
+                    }
+                }
+            }
+        }
+    }
+
+}
 @media all and (max-width: 1250px) {
     div#et-main-area div#main-content article.page div.entry-content div.section-videos div.video-row {
         width: 95%;
