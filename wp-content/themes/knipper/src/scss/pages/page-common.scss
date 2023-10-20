@@ -41,8 +41,12 @@ div.hero-section {
     color: $dark_blue !important;
     text-decoration: underline;
 }
-
-
+.et_pb_button:after, .et_pb_button:before {
+    content: "" !important;
+}
+a.et_pb_button .yellow-430:hover {
+    
+}
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 768px) {
