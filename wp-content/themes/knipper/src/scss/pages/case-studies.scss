@@ -86,6 +86,12 @@ div#et-main-area {
                             }
                             a#case-study-cta-btn {
                                 margin: 0 auto !important;
+                                &:hover{
+                                	background-image: url(/wp-content/themes/knipper/images/bro-btn-hover-large-yellow-430x60.png);
+                                	&:after{
+                                        opacity: 0;
+                                    }
+                                }
                             }
                         }
                     }
@@ -109,7 +115,7 @@ div#et-main-area {
                         width: 100%;
                             h3 {
                                 @include medium();
-                                font-size: 30px;
+                                font-size: 24px;
                                 line-height: 37px;
                                 color: $mid_grey1;
                                 padding-bottom: 0;
@@ -177,9 +183,9 @@ div#et-main-area {
                                             padding: 0;
                                             align-items: center;
                                             h3.cscard-h3 {
-                                                @include bold();
-                                                font-size: 24px;
-                                                line-height: 29px;
+                                                @include medium();
+                                                font-size: 22px;
+                                                line-height: 32px;
                                                 text-align: center;
                                                 margin: 0;
                                                 height: 87px;
@@ -187,7 +193,7 @@ div#et-main-area {
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                padding: 20% 10px 38%;
+                                                padding: 20% 15px 38%;
                                             }
                                             div.cscard-btn-wrapper {
                                                 text-align: center;
@@ -241,9 +247,14 @@ div#et-main-area {
                 div.entry-content {
                     div#case-study-hero-section {
                         padding-top: 0 !important;
-                        div#case-study-row-hero {
+                        div#case-studies-row-hero {
                             div#case-study-hero-col {
-
+								div.hero-heading{
+                                    h1 {
+                                    color: #fff;
+                                    padding-left: 50px;
+                                    }
+                                }
                             }
                         }
                     }
@@ -318,6 +329,7 @@ div#et-main-area {
                                 }
                                 a#case-study-cta-btn {
                                     margin: 0 auto !important;
+
                                 }
                             }
                         }
@@ -341,7 +353,7 @@ div#et-main-area {
                             width: 100%;
                                 h3 {
                                     @include medium();
-                                    font-size: 30px;
+                                    font-size: 24px;
                                     line-height: 37px;
                                     color: $mid_grey1;
                                     padding-bottom: 0;
@@ -408,9 +420,7 @@ div#et-main-area {
                                                 padding: 0;
                                                 align-items: center;
                                                 h3.cscard-h3 {
-                                                    @include bold();
-                                                    font-size: 24px;
-                                                    line-height: 29px;
+                                                    
                                                     text-align: center;
                                                     margin: 0;
                                                     height: 87px;
@@ -456,12 +466,7 @@ div#et-main-area {
                         padding-top: 0 !important;
                         div#case-studies-row-hero {
                             div#case-study-hero-col {
-                                div.hero-heading{
-                                    h1 {
-                                    color: #fff;
-                                    padding-left: 30px;
-                                    }
-                                }
+                                
                             }
                         }
                     }
@@ -703,9 +708,7 @@ div#et-main-area {
                                                 padding: 0px 10px;
                                                 align-items: center;
                                                 h3.cscard-h3 {
-                                                    @include bold();
-                                                    font-size: 24px;
-                                                    line-height: 29px;
+                                                    
                                                     text-align: center;
                                                     margin: 0;
                                                     height: 87px;
