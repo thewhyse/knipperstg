@@ -161,15 +161,25 @@ a.knipper-btn {
 }
 .yellow-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-yellow-175x60.png');
+
 }
 .red-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-red-175x60.png');
+    &:hover{
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-red-hover-175x60.png');  
+    }
 }
 .blue-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-175x60.png');
+    &:hover{
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-hover-175x60.png');  
+    }
 }
 .green-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-green-175x60.png');
+    &:hover{
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-green-hover-175x60.png');  
+    }
 }
 
 
