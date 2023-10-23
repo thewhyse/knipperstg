@@ -279,6 +279,20 @@ div.icon-row-copy div.et_pb_text_inner p {
             }
         }
     }
+    div#col4-greylogo {
+        align-items: flex-start;
+    }
+    div#col5-greylogo {
+        align-items: center;
+    }
+    div#col1-greylogo,
+    div#col4-greylogo {
+        justify-content: flex-end;
+    }
+    div#col3-greylogo,
+    div#col6-greylogo {
+        justify-content: flex-start;
+    }
 }
 @media all and (max-width: 576px) {
     div.row-greylogo {
