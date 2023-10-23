@@ -82,9 +82,18 @@ div.row-greylogo {
 div.greylogo-col {
     margin: 0 !important;
     display: flex;
-    justify-content: center;
     align-items: flex-start;
     width: 16.66% !important;
+}
+div#col1-greylogo,
+div#col2-greylogo,
+div#col3-greylogo {
+    justify-content: flex-start;
+}
+div#col4-greylogo,
+div#col5-greylogo,
+div#col6-greylogo {
+    justify-content: flex-end;
 }
 div#col1-greylogo,
 div#col2-greylogo,
@@ -158,26 +167,52 @@ div.icon-row-copy div.et_pb_text_inner p {
     right: 7px;
     position: relative;
 }
-
+@media all and (min-width: 981px) {
+    div.row-greylogo {
+        max-width: 880px !important;
+    }
+}
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 768px) {
+
+}
+@media all and (max-width: 980px) {
+div#col1-greylogo,
+div#col2-greylogo,
+div#col3-greylogo,
+div#col4-greylogo,
+div#col5-greylogo,
+div#col6-greylogo {
+    justify-content: center;
+}
 }
 @media all and (max-width: 576px) {
+    div#col1-greylogo,
+    div#col2-greylogo,
+    div#col3-greylogo,
+    div#col4-greylogo,
+    div#col5-greylogo,
+    div#col6-greylogo {
+        justify-content: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+    }
+    div.greylogo-col {
+        align-items: center;
+        width: 33.33% !important;
+        height: 55px;
+        justify-content: center;
+    }
+    div.row-greylogo {
+        flex-wrap: wrap;
+    }
 }
 @media all and (max-width: 480px) {
 }
 @media all and (max-width: 320px) {
     .et_pb_row_10.et_pb_row {
         margin-top: 0px !important;
-    }
-    div.row-greylogo {
-        flex-wrap: wrap;
-    }
-    div.greylogo-col {
-        align-items: center;
-        width: 33.33% !important;
-        height: 55px;
     }
     .numbers-heading {
         font-size: 20px !important;

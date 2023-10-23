@@ -97,7 +97,7 @@ div#et-main-area {
                     }
                 }
                 div.section-videos {
-                    padding: 35px 0 20px 0 !important;
+                    padding: 35px 0 100px 0 !important;
                     .text-blue{
                         color: $knipper_blue !important;
                     }
@@ -137,6 +137,7 @@ div#et-main-area {
                         margin: 0 auto !important;
                         div.video-col-left {
                             align-items: flex-start;
+                            margin-right: 30px;
                         }
                         div.video-col-center {
                             align-items: center;
@@ -155,7 +156,7 @@ div#et-main-area {
                             width: 100%;
                             div.video-card {
                                 background-color: $white;
-                                padding: 0 0 30px 0;
+                                padding: 0;
                                 border-radius: 20px;
                                 overflow: hidden !important;
                                 width: 100% !important;
@@ -164,7 +165,7 @@ div#et-main-area {
                                 max-height: 470px !important;
                                 -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                 box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                margin-bottom: 40px !important;
+                                margin-bottom: 0px !important;
                                     div.et_pb_text_inner {
                                         display: flex;
                                         flex-direction: column;
@@ -179,9 +180,10 @@ div#et-main-area {
                                             display: flex;
                                             flex-direction: column;
                                             justify-content: center;
-                                            height: 75px;
+                                            height: 100%;
                                             padding: 0;
                                             align-items: center;
+                                            min-height: 90px;
                                             h3.vidcard-h3 {
                                                 @include medium();
                                                 font-size: 22px;
@@ -193,7 +195,7 @@ div#et-main-area {
                                                 display: flex;
                                                 justify-content: center;
                                                 align-items: center;
-                                                padding-top: 20px;
+                                                padding-top: 0;
                                                 padding-left: 15px;
                                                 padding-right: 15px;
                                                 // padding-bottom: 38%;
@@ -212,14 +214,33 @@ div#et-main-area {
                                 padding: 0;
                             }
                         }
+                        div.video-col-grid {
+                            display: grid;
+                            grid-template-columns: repeat(2, 1fr);
+                            grid-template-rows: repeat(2, 1fr);
+                            grid-column-gap: 30px;
+                            grid-row-gap: 40px;
+                            div#videocard-3 {
+                                grid-area: 1 / 1 / 2 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#videocard-4 {
+                                grid-area: 1 / 2 / 2 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#videocard-5 {
+                                grid-area: 2 / 1 / 3 / 2;;
+                                justify-self: flex-start;
+                            }
+                        }
                     }
                 }
                 .color {
                     background-color: $brochure_row;
                 }
-                div#videos-3rd-party-section {
+                /* div#videos-3rd-party-section {
                     padding: 35px 0 0 0 !important;
-                }
+                } */
             }
         }
     }
@@ -231,49 +252,19 @@ div#et-main-area {
     }
 }
 @media all and (max-width: 1280px) {
-
-div#et-main-area {
+    div#et-main-area {
         div#main-content {
             article.page {
                 div.entry-content {
                     div#video-hero-section {
                         padding-top: 0 !important;
-                        div#videos-row-hero {
-                            div#video-hero-col {
-                            	div.hero-heading{
-
-                                }
-                            }
-                        }
                     }
                     div#video-body-top {
-                        div#videos-breadcrumb-row {
-                            div#videos-yoast-breadcrumb {
-                                .breadcrumbs.videos {
-
-                                }
-                                .breadcrumbs a {
-
-                                }
-                                .breadcrumbs a:hover {
-
-                                }
-
-                            }
-                        }
                         div#video-row-topbody {
                             div.video-topbody-col {
-                                h2 {
-
-                                }
-                                div#triple-diamonds {
-                                }
                                 div#video-jump-links {
-
                                     div.et_pb_text_inner {
-
                                         span.video-link-span {
-
                                             a.video-link {
                                                 text-decoration: underline;
                                             }
@@ -290,20 +281,10 @@ div#et-main-area {
                                     }
 
                                 }
-                                div.body-copy {
-
-                                    p.p1 {
-
-                                    }
-                                }
-                                a#video-cta-btn {
-
-                                }
                             }
                         }
                     }
                     div.section-videos {
-
                         .text-blue{
                             color: $knipper_blue !important;
                         }
@@ -313,72 +294,11 @@ div#et-main-area {
                         .text-red{
                             color: $knipper_red !important;
                         }
-                        div.video-row {
-                            div#videos-corporate,
-                            div#videos-msm,
-                            div#videos-custom-pharm,
-                            div#videos-3rd-party {
-
-                                h3 {
-
-                                }
-                                a.mobile-toggle {
-
-                                }
-                            }
-                        }
-                        div.video-row {
-
-
-                            div.video-col-left,
-                            div.video-col-center,
-                            div.video-col-right {
-
-                            }
-                            .et_pb_column {
-
-                                div.video-card {
-
-                                    width: 95% !important;
-                                    height: 100% !important;
-
-                                        div.et_pb_text_inner {
-
-                                            div.vidcard-img-wrapper {
-
-                                                img.vidcard-img {
-
-                                                }
-                                            }
-                                            div.vidcard-content-wrapper {
-
-                                                h3.vidcard-h3 {
-
-
-                                                }
-                                                div.vidcard-btn-wrapper {
-
-                                                }
-                                            }
-                                        }
-                                }
-                                .video-items-module div.video-card {
-
-                                }
-                            }
-                        }
-                    }
-                    .color {
-
-                    }
-                    div#videos-3rd-party-section {
-
                     }
                 }
             }
         }
     }
-
 }
 @media all and (max-width: 1250px) {
     div#et-main-area div#main-content article.page div.entry-content div.section-videos div.video-row {
@@ -390,9 +310,6 @@ div#et-main-area {
     line-height: 32px;
     padding: 2% 0 1% 0;
     }
-    div#et-main-area div#main-content article.page div.entry-content div.section-videos div.video-row .et_pb_column {
-        padding: 2%;
-    }
 }
 @media all and (max-width: 1024px) {
     div#et-main-area {
@@ -401,11 +318,6 @@ div#et-main-area {
                 div.entry-content {
                     div#video-hero-section {
                         padding-top: 0 !important;
-                        div#videos-row-hero {
-                            div#video-hero-col {
-
-                            }
-                        }
                     }
                     div#video-body-top {
                         div#videos-breadcrumb-row {
@@ -435,8 +347,6 @@ div#et-main-area {
                                     font-weight: 600;
                                     font-size: 36px !important;
                                     line-height: 46px !important;
-                                }
-                                div#triple-diamonds {
                                 }
                                 div#video-jump-links {
                                     max-width: 1050px;
@@ -483,7 +393,7 @@ div#et-main-area {
                         }
                     }
                     div.section-videos {
-                        padding: 35px 0 20px 0 !important;
+                        padding: 35px 0 100px 0 !important;
                         .text-blue{
                             color: $knipper_blue !important;
                         }
@@ -522,6 +432,11 @@ div#et-main-area {
                             padding: 0 !important;
                             margin: 0 auto !important;
                             flex-wrap: wrap ;
+                            div.video-col-left {
+                                margin-bottom: 50px;
+                                margin-right: 0;
+                            }
+
                             div.video-col-left,
                             div.video-col-center,
                             div.video-col-right {
@@ -540,7 +455,7 @@ div#et-main-area {
                                 width: 100%;
                                 div.video-card {
                                     background-color: $white;
-                                    padding: 0 0 30px 0;
+                                    padding: 0;
                                     border-radius: 20px;
                                     overflow: hidden !important;
                                     width: 100% !important;
@@ -549,7 +464,7 @@ div#et-main-area {
                                     max-height: 100% !important;
                                     -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                     box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                    margin-bottom: 40px !important;
+                                    margin-bottom: 0px !important;
                                         div.et_pb_text_inner {
                                             display: flex;
                                             flex-direction: column;
@@ -567,6 +482,7 @@ div#et-main-area {
                                                 height: 100%;
                                                 padding: 0;
                                                 align-items: center;
+                                                min-height: 90px;
                                                 h3.vidcard-h3 {
 
 
@@ -584,14 +500,36 @@ div#et-main-area {
                                     padding: 0;
                                 }
                             }
+                            div.video-col-grid {
+                            display: flex;
+                            justify-items: center;
+                            align-items: flex-start;
+                                div#videocard-3 {
+                                    grid-area: 1 / 1 / 2 / 2;
+                                    justify-self: flex-start;
+                                }
+                                div#videocard-4 {
+                                    grid-area: 1 / 2 / 2 / 3;
+                                    justify-self: flex-end;
+                                }
+                                div#videocard-5 {
+                                    grid-area: 2 / 1 / 3 / 2;;
+                                    justify-self: flex-start;
+                                }
+                            }
                         }
                     }
                     .color {
                         background-color: $brochure_row;
                     }
-                    div#videos-3rd-party-section {
-                        padding: 35px 0 0 0 !important;
+                    div#videos-custom-pharma-section {
+                        div.video-col-center {
+                            display: none;
+                        }
                     }
+                    /* div#videos-3rd-party-section {
+                        padding: 35px 0 0 0 !important;
+                    } */
                 }
             }
         }
@@ -609,7 +547,6 @@ div#et-main-area {
                             	div.hero-heading{
                                     h1 {
                                     color: #fff;
-                                    padding-left: 30px;
                                     }
                                 }
                             }
@@ -643,8 +580,6 @@ div#et-main-area {
                                     font-weight: 600;
                                     font-size: 36px !important;
                                     line-height: 46px !important;
-                                }
-                                div#triple-diamonds {
                                 }
                                 div#video-jump-links {
                                     display: none;
@@ -808,12 +743,16 @@ div#et-main-area {
                             padding: 0 20px !important;
                             margin: 0 auto !important;
                             flex-wrap: wrap;
+                            div.video-col-right,
+                            div.video-col-center {
+                                margin-bottom: 50px;
+                            }
                             div.video-col-left,
                             div.video-col-center,
                             div.video-col-right {
                                 align-items: center;
                                 justify-content: space-between;
-                                width: 50%;
+                                width: 100%;
                             }
                             .et_pb_column {
                                 flex-direction: column;
@@ -827,13 +766,12 @@ div#et-main-area {
                                 padding: 0;
                                 div.video-card {
                                     background-color: $white;
-                                    padding: 0 0 30px 0;
+                                    padding: 0 0 0px 0;
                                     border-radius: 20px;
                                     overflow: hidden !important;
-
                                     -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                     box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                    margin-bottom: 40px !important;
+                                    margin-bottom: 0px !important;
                                         div.et_pb_text_inner {
                                             display: flex;
                                             flex-direction: column;
@@ -851,6 +789,7 @@ div#et-main-area {
                                                 height: 100%;
                                                 padding: 0px 10px;
                                                 align-items: center;
+                                                min-height: 90px;
                                                 h3.vidcard-h3 {
 
                                                     height: auto;
@@ -868,6 +807,11 @@ div#et-main-area {
                                     padding: 0;
                                 }
                             }
+                            div.video-col-grid {
+                                div#videocard-5 {
+                                    margin-bottom: 50px !important;
+                                }
+                            }
                         }
                         div.video-row.video-content-row {
                             display: none;
@@ -879,6 +823,11 @@ div#et-main-area {
                     }
                     .color {
                         background-color: $brochure_row;
+                    }
+                    div#videos-custom-pharma-section {
+                        div.video-col-center {
+                            display: none;
+                        }
                     }
                     div#videos-3rd-party-section {
                         padding: 0px 0 0 0 !important;

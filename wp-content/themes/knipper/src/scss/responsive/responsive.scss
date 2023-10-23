@@ -452,10 +452,11 @@
         border-right-width: 0;
     }
     .diamond-box {
-        -webkit-box-pack: center;
-            -ms-flex-pack: center;
-                justify-content: center;
+        -webkit-box-pack: flex-start;
+            -ms-flex-pack: flex-start;
+                justify-content: flex-start;
         height: auto !important;
+        padding-left: 25%;
     }
     .et_pb_column_17,
     .et_pb_column_26,
@@ -787,6 +788,7 @@
             -ms-flex-pack: start;
                 justify-content: flex-start;
         height: auto !important;
+        padding-left: 0;
     }
     .diamond-blue-text,
     .diamond-green-text,

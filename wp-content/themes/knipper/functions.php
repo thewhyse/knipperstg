@@ -11,7 +11,7 @@ function remove_default_p_tags($content)
     $content = str_replace('</p>', '', $content);
     return $content;
 }
-add_filter('the_content', 'remove_default_p_tags'); 
+add_filter('the_content', 'remove_default_p_tags');
 
 // WordPress Admin CSS
 function admin_style()
@@ -167,41 +167,6 @@ function image_preload_css()
 }
 add_action('wp_head', 'image_preload_css');
 
-// Add Mobile Menu Toggle script to page head
-function mobile_menu_toggle_jquery()
-{
-?>
-    <script>
-        jQuery(function($) {
-            $(document).ready(function() {
-                $(
-                    "body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu  li.page_item_has_children"
-                ).append('<a href="#" class="mobile-toggle"></a>');
-                $(
-                    "ul.et_mobile_menu li.menu-item-has-children .mobile-toggle, ul.et_mobile_menu li.page_item_has_children .mobile-toggle"
-                ).click(function(event) {
-                    event.preventDefault();
-                    $(this).parent("li").toggleClass("dt-open");
-                    $(this).parent("li").find("ul.children").first().toggleClass("visible");
-                    $(this).parent("li").find("ul.sub-menu").first().toggleClass("visible");
-                });
-                iconFINAL = "P";
-                $(
-                    "body ul.et_mobile_menu li.menu-item-has-children, body ul.et_mobile_menu li.page_item_has_children"
-                ).attr("data-icon", iconFINAL);
-                $(".mobile-toggle")
-                    .on("mouseover", function() {
-                        $(this).parent().addClass("is-hover");
-                    })
-                    .on("mouseout", function() {
-                        $(this).parent().removeClass("is-hover");
-                    });
-            });
-        });
-    </script>
-<?php
-}
-add_action('wp_head', 'mobile_menu_toggle_jquery');
 
 // Add HotJar script to page head
 function hotjar_javascript()
@@ -289,27 +254,27 @@ add_action('wp_head', 'gtag_manager_javascript');
 
 function knipper_script_footer()
 {
-    ?>
-        <script type='text/javascript'>
-            piAId = '1019512';
-            piCId = '';
-            piHostname = 'www8.knipper.com';
+?>
+    <script type='text/javascript'>
+        piAId = '1019512';
+        piCId = '';
+        piHostname = 'www8.knipper.com';
 
-            (function() {
-                function async_load() {
-                    var s = document.createElement('script');
-                    s.type = 'text/javascript';
-                    s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
-                    var c = document.getElementsByTagName('script')[0];
-                    c.parentNode.insertBefore(s, c);
-                }
-                if (window.attachEvent) {
-                    window.attachEvent('onload', async_load);
-                } else {
-                    window.addEventListener('load', async_load, false);
-                }
-            })();
-        </script>
+        (function() {
+            function async_load() {
+                var s = document.createElement('script');
+                s.type = 'text/javascript';
+                s.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + piHostname + '/pd.js';
+                var c = document.getElementsByTagName('script')[0];
+                c.parentNode.insertBefore(s, c);
+            }
+            if (window.attachEvent) {
+                window.attachEvent('onload', async_load);
+            } else {
+                window.addEventListener('load', async_load, false);
+            }
+        })();
+    </script>
     <?php
 }
 add_action('wp_footer', 'knipper_script_footer', 20);

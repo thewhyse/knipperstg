@@ -97,7 +97,7 @@ div#et-main-area {
                     }
                 }
                 div.section-brochures {
-                    padding: 35px 0 20px 0 !important;
+                    padding: 35px 0 100px 0 !important;
                     .text-blue{
                         color: $knipper_blue !important;
                     }
@@ -164,7 +164,7 @@ div#et-main-area {
                                 max-height: 470px !important;
                                 -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                 box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                margin-bottom: 40px !important;
+                                margin-bottom: 0px !important;
                                     div.et_pb_text_inner {
                                         display: flex;
                                         flex-direction: column;
@@ -209,13 +209,75 @@ div#et-main-area {
                                 padding: 0;
                             }
                         }
+                        div.brochure-col-grid {
+                            display: grid;
+                            grid-template-columns: repeat(3, 1fr);
+                            grid-template-rows: repeat(2, 1fr);
+                            grid-column-gap: 30px;
+                            grid-row-gap: 50px;
+                            justify-items: center;
+                            align-items: flex-start;
+                            div#brocard-4 {
+                                grid-area: 1 / 1 / 2 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-5 {
+                                grid-area: 1 / 2 / 2 / 3;
+                            }
+                            div#brocard-6 {
+                                grid-area: 1 / 3 / 2 / 4;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-7 {
+                                grid-area: 2 / 1 / 3 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-8 {
+                                grid-area: 2 / 2 / 3 / 3;
+                            }
+                        }
                     }
                 }
                 .color {
                     background-color: $brochure_row;
                 }
                 div#brochures-3rd-party-section {
-                    padding: 35px 0 0 0 !important;
+                    /* padding: 35px 0 0 0 !important; */
+                    div.brochure-col-grid {
+                        display: grid;
+                        grid-template-columns: repeat(3, 1fr);
+                        grid-template-rows: repeat(3, 1fr);
+                        grid-column-gap: 30px;
+                        grid-row-gap: 50px;
+                        justify-items: center;
+                        align-items: flex-start;
+                        div#brocard-9 {
+                            grid-area: 1 / 1 / 2 / 2;
+                            justify-self: flex-start;
+                        }
+                        div#brocard-10 {
+                            grid-area: 1 / 2 / 2 / 3;
+                        }
+                        div#brocard-11 {
+                            grid-area: 1 / 3 / 2 / 4;
+                            justify-self: flex-end;
+                        }
+                        div#brocard-12 {
+                            grid-area: 2 / 1 / 3 / 2;
+                            justify-self: flex-start;
+                        }
+                        div#brocard-13 {
+                            grid-area: 2 / 2 / 3 / 3;
+                        }
+                        div#brocard-14 {
+                            grid-area: 2 / 3 / 3 / 4;
+                            justify-self: flex-end;
+                        }
+                        div#brocard-15 {
+                            grid-area: 3 / 1 / 4 / 2;
+                            justify-self: flex-start;
+                        }
+                    }
                 }
             }
         }
@@ -236,9 +298,6 @@ div#et-main-area {
     font-size: 20px !important;
     line-height: 32px;
     padding: 2% 0 1% 0;
-    }
-    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row .et_pb_column {
-        padding: 2%;
     }
 }
 @media all and (max-width: 1024px) {
@@ -330,7 +389,7 @@ div#et-main-area {
                         }
                     }
                     div.section-brochures {
-                        padding: 35px 0 20px 0 !important;
+                        padding: 35px 0 100px 0 !important;
                         .text-blue{
                             color: $knipper_blue !important;
                         }
@@ -369,12 +428,18 @@ div#et-main-area {
                             padding: 0 !important;
                             margin: 0 auto !important;
                             flex-wrap: wrap ;
-                            div.brochure-col-left,
-                            div.brochure-col-center,
-                            div.brochure-col-right {
-                                align-items: center;
+                            div.brochure-col-left {
+                                align-items: flex-start;
                                 justify-content: space-between;
                                 width: 50%;
+                            }
+                            div.brochure-col-center {
+                                align-items: flex-end;
+                                justify-content: space-between;
+                                width: 50%;
+                            }
+                            div.brochure-col-right {
+                                display: none;
                             }
                             .et_pb_column {
                                 flex-direction: column;
@@ -392,11 +457,11 @@ div#et-main-area {
                                     overflow: hidden !important;
                                     width: 100% !important;
                                     height: 100% !important;
-                                    max-width: 323px !important;
-                                    max-height: 420px !important;
+                                    max-width: 350px !important;
+                                    max-height: 456px !important;
                                     -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                     box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                    margin-bottom: 40px !important;
+                                    margin-bottom: 0px !important;
                                         div.et_pb_text_inner {
                                             display: flex;
                                             flex-direction: column;
@@ -439,13 +504,79 @@ div#et-main-area {
                                     padding: 0;
                                 }
                             }
+                            div.brochure-col-grid {
+                                display: grid;
+                                grid-template-columns: repeat(2, 1fr);
+                                grid-template-rows: repeat(3, 1fr);
+                                grid-column-gap: 0px;
+                                grid-row-gap: 50px;
+                                justify-items: center;
+                                align-items: flex-start;
+                                div#brocard-4 {
+                                    grid-area: 1 / 1 / 2 / 2;
+                                    justify-self: flex-start;
+                                }
+                                div#brocard-5 {
+                                    grid-area: 1 / 2 / 2 / 3;
+                                    justify-self: flex-end;
+                                }
+                                div#brocard-6 {
+                                    grid-area: 2 / 1 / 3 / 2;
+                                    justify-self: flex-start;
+                                }
+                                div#brocard-7 {
+                                    grid-area: 2 / 2 / 3 / 3;
+                                    justify-self: flex-end;
+                                }
+                                div#brocard-8 {
+                                    grid-area: 3 / 1 / 4 / 2;
+                                    justify-self: flex-start;
+                                }
+                            }
                         }
                     }
                     .color {
                         background-color: $brochure_row;
                     }
                     div#brochures-3rd-party-section {
-                        padding: 35px 0 0 0 !important;
+                        /* padding: 35px 0 0 0 !important; */
+                        div.brochure-col-grid {
+                        display: grid;
+                        grid-template-columns: repeat(2, 1fr);
+                        grid-template-rows: repeat(4, 1fr);
+                        grid-column-gap: 0px;
+                        grid-row-gap: 50px;
+                        justify-items: center;
+                        align-items: flex-start;
+                            div#brocard-9 {
+                                grid-area: 1 / 1 / 2 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-10 {
+                                grid-area: 1 / 2 / 2 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-11 {
+                                grid-area: 2 / 1 / 3 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-12 {
+                                grid-area: 2 / 2 / 3 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-13 {
+                                grid-area: 3 / 1 / 4 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-14 {
+                                grid-area: 3 / 2 / 4 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-15 {
+                                grid-area: 4 / 1 / 5 / 2;
+                                justify-self: flex-start;
+                            }
+                        }
                     }
                 }
             }
@@ -464,7 +595,7 @@ div#et-main-area {
                                 div.hero-heading{
                                     h1 {
                                     color: #fff;
-                                    padding-left: 30px;
+
                                     }
                                 }
                             }
@@ -685,11 +816,13 @@ div#et-main-area {
                                     padding: 0 0 30px 0;
                                     border-radius: 20px;
                                     overflow: hidden !important;
-                                    width: 323px !important;
-                                    height: 420px !important;
+                                    width: 100% !important;
+                                    height: 100% !important;
+                                    max-width: 360px !important;
+                                    max-height: 470px !important;
                                     -webkit-box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
                                     box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
-                                    margin-bottom: 40px !important;
+                                    margin-bottom: 0px !important;
                                         div.et_pb_text_inner {
                                             display: flex;
                                             flex-direction: column;
@@ -728,14 +861,42 @@ div#et-main-area {
                                             }
                                         }
                                 }
+                                div#brocard-2 {
+                                    margin-bottom: 40px !important;
+                                }
                                 .video-items-module div.brochure-card {
                                     padding: 0;
+                                }
+                            }
+                            div.brochure-col-grid {
+                                display: flex;
+                                justify-items: center;
+                                align-items: center;
+                                div#brocard-4 {
+                                    grid-area: 1 / 1 / 2 / 2;
+                                    justify-self: flex-start;
+                                }
+                                div#brocard-5 {
+                                    grid-area: 1 / 2 / 2 / 3;
+                                    justify-self: flex-end;
+                                }
+                                div#brocard-6 {
+                                    grid-area: 2 / 1 / 3 / 2;
+                                    justify-self: flex-start;
+                                }
+                                div#brocard-7 {
+                                    grid-area: 2 / 2 / 3 / 3;
+                                    justify-self: flex-end;
+                                }
+                                div#brocard-8 {
+                                    grid-area: 3 / 1 / 4 / 2;
+                                    justify-self: flex-start;
                                 }
                             }
                         }
                         div.brochure-row.brochure-content-row {
                             display: none;
-                            padding: 40px 20px 0 !important;
+                            padding: 40px 20px 40px !important;
                         }
                         div.brochure-row.brochure-content-row.active-content {
                             display: flex;
@@ -746,7 +907,40 @@ div#et-main-area {
                         background-color: $brochure_row;
                     }
                     div#brochures-3rd-party-section {
-                        padding: 0px 0 0 0 !important;
+                        /* padding: 0px 0 0 0 !important; */
+                        div.brochure-col-grid {
+                        display: flex;
+                        justify-items: center;
+                        align-items: center;
+                            div#brocard-9 {
+                                grid-area: 1 / 1 / 2 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-10 {
+                                grid-area: 1 / 2 / 2 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-11 {
+                                grid-area: 2 / 1 / 3 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-12 {
+                                grid-area: 2 / 2 / 3 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-13 {
+                                grid-area: 3 / 1 / 4 / 2;
+                                justify-self: flex-start;
+                            }
+                            div#brocard-14 {
+                                grid-area: 3 / 2 / 4 / 3;
+                                justify-self: flex-end;
+                            }
+                            div#brocard-15 {
+                                grid-area: 4 / 1 / 5 / 2;
+                                justify-self: flex-start;
+                            }
+                        }
                     }
                 }
             }
@@ -758,7 +952,10 @@ div#et-main-area {
 @media all and (max-width: 480px) {
 }
 @media all and (max-width: 320px) {
-    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-corporate h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-msm h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-custom-pharm h3, div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-3rd-party h3 {
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-corporate h3,
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-msm h3,
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-custom-pharm h3,
+    div#et-main-area div#main-content article.page div.entry-content div.section-brochures div.brochure-row div#brochures-3rd-party h3 {
         line-height: 20px !important;
     }
 }

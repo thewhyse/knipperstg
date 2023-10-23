@@ -2,7 +2,11 @@
 @import "../base/fonts";
 
 /* ******* KNIPPER BUTTONS START ******* */
-
+a.footer-terms-link,
+a.knipper-btn,
+a.knipper-btn:after  {
+    transition: all 300ms ease 0ms;
+}
 .et_pb_bg_layout_light.et_pb_button:hover, .et_pb_bg_layout_light .et_pb_button:hover {
     background-color: transparent !important;
 }
@@ -166,19 +170,19 @@ a.knipper-btn {
 .red-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-red-175x60.png');
     &:hover{
-      background-image: url('/wp-content/themes/knipper/images/bro-btn-red-hover-175x60.png');  
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-red-hover-175x60.png');
     }
 }
 .blue-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-175x60.png');
     &:hover{
-      background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-hover-175x60.png');  
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-blue-hover-175x60.png');
     }
 }
 .green-175 {
     background-image: url('/wp-content/themes/knipper/images/bro-btn-green-175x60.png');
     &:hover{
-      background-image: url('/wp-content/themes/knipper/images/bro-btn-green-hover-175x60.png');  
+      background-image: url('/wp-content/themes/knipper/images/bro-btn-green-hover-175x60.png');
     }
 }
 
