@@ -10,6 +10,9 @@ a.knipper-btn:after  {
 /* .et_pb_bg_layout_light.et_pb_button:hover, .et_pb_bg_layout_light .et_pb_button:hover {
     background-color: transparent !important;
 } */
+.et_pb_bg_layout_light.et_pb_button:hover, .et_pb_bg_layout_light .et_pb_button:hover {
+    background-color: transparent;
+}
 .tlpage-buttons {
     display: -webkit-box;
     display: -ms-flexbox;
