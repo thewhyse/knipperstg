@@ -95,13 +95,13 @@ div.greylogo-col {
     margin: 0 !important;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     float: unset;
     width: 16.66% !important;
 }
 div#col3-greylogo,
 div#col4-greylogo {
-    align-items: flex-start;
+    align-items: center;
 }
 div.greylogo-col {
     div.partner-logo1 {
