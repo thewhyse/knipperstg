@@ -1,0 +1,245 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER MAINTENANCE PAGE START ******* */
+
+body.page-template-page-template-blank {
+    overflow: hidden;
+}
+div#main-copy-section {
+    height: 100vh;
+    padding: 65px 0 0 0 !important;
+    div.knipper-row {
+        padding: 0;
+        div.knipper-col {
+            div#maint-logo {
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            margin-bottom: 190px;
+                img {
+                    width: 250px;
+                    height: 47px;
+                }
+            }
+            div.et_pb_module {
+                margin: 0;
+                padding: 0;
+            }
+            h1.main-h1 {
+                @include bold();
+                color: $mid_grey5;
+                font-size: 36px;
+                line-height: 43px;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+                margin-bottom: 15px;
+            }
+            p.maint-p {
+                @include regular();
+                font-size: 24px;
+                line-height: 29px;
+                color: $mid_grey5;
+                text-align: center;
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+}
+div#main-copyright-section {
+    height: 50px;
+    background-color: $mid_grey1;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    div.knipper-row {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div.knipper-col {
+            p.main-copyright {
+                @include regular();
+                color: $white;
+                font-size: 15px;
+                line-height: 18px;
+                text-align: center;
+            }
+        }
+    }
+}
+@media all and (max-width: 1500px) {
+    div#main-copy-section {
+        div.knipper-row {
+                div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 175px;
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1400px) {
+    div#main-copy-section {
+        div.knipper-row {
+                div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 160px;
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1300px) {
+    div#main-copy-section {
+        div.knipper-row {
+                div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 160px;
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1200px) {
+    div#main-copy-section {
+        div.knipper-row {
+                div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 155px;
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1100px) {
+    div#main-copy-section {
+        div.knipper-row {
+                div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 145px;
+                    }
+                }
+        }
+    }
+}
+@media all and (max-width: 1024px) {
+    div#main-copy-section {
+        div.knipper-row {
+            width: 90%;
+            div.knipper-col {
+                    div#maint-logo {
+                    margin-bottom: 140px;
+                    }
+            }
+        }
+    }
+    div#main-copy-section div.knipper-row div.knipper-col h1.main-h1 {
+        font-size: 32px;
+        line-height: 41px;
+        margin-bottom: 15px;
+    }
+    div#main-copy-section div.knipper-row div.knipper-col p.maint-p {
+        font-size: 22px;
+        line-height: 27px;
+    }
+}
+@media all and (max-width: 768px) {
+    div#main-copy-section div.knipper-row div.knipper-col h1.main-h1 {
+        font-size: 29px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 576px) {
+    div#main-copy-section {
+        div.knipper-row {
+            width: 70%;
+            div.knipper-col {
+                div#maint-logo {
+                margin-bottom: 45px;
+                }
+            }
+        }
+    }
+    div#main-copy-section div.knipper-row div.knipper-col h1.main-h1 {
+        font-size: 29px;
+        line-height: 38px;
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 480px) {
+        div#main-copy-section {
+        div.knipper-row {
+            width: 80%;
+            div.knipper-col {
+                div#maint-logo {
+                margin-bottom: 40px;
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 320px) {
+    div#main-copy-section {
+    height: 100vh;
+    padding: 30px 0 0 0 !important;
+        div.knipper-row {
+            width: 70%;
+            div.knipper-col {
+                div#maint-logo {
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 30px;
+                    img {
+                        width: 130px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+    div#main-copy-section div.knipper-row div.knipper-col h1.main-h1 {
+        font-size: 18px;
+        line-height: 20px;
+        margin-bottom: 10px;
+    }
+    div#main-copy-section div.knipper-row div.knipper-col p.maint-p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+    div#main-copyright-section {
+    height: 50px;
+    background-color: $mid_grey1;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    div.knipper-row {
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        div.knipper-col {
+            p.main-copyright {
+                @include regular();
+                color: $white;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: center;
+            }
+        }
+    }
+    }
+}
+/* ******* KNIPPER MAINTENANCE PAGE END ******* */
