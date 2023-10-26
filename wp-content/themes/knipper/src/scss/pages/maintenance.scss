@@ -107,6 +107,11 @@ div#main-copyright-section {
         }
     }
 }
+@media all and (width: 1280px) and (height: 720px) {
+    div#main-copy-section div.knipper-row div.knipper-col div#maint-logo {
+        margin-bottom: 100px
+    }
+}
 @media all and (max-width: 1200px) {
     div#main-copy-section {
         div.knipper-row {
