@@ -1,6 +1,6 @@
 <?php
 
-// Remove p tags from category description
+/* // Remove p tags from category description
 remove_filter('term_description', 'wpautop');
 remove_filter('the_content', 'wpautop');
 remove_filter('the_excerpt', 'wpautop');
@@ -11,7 +11,7 @@ function remove_default_p_tags($content)
     $content = str_replace('</p>', '', $content);
     return $content;
 }
-add_filter('the_content', 'remove_default_p_tags');
+add_filter('the_content', 'remove_default_p_tags'); */
 
 // WordPress Admin CSS
 function admin_style()
