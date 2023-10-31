@@ -42,6 +42,7 @@ div#et-main-area {
                     .team-wrapper {
                         border: 1px solid #4d4d4d;
                         border-bottom: 10px solid #4d4d4d;
+                        max-width: 400px;
                         div.et_pb_module {
                             div.et_pb_text_inner {
                                 h3 {
@@ -208,9 +209,16 @@ div#et-main-area {
 
                         }
                     }
-                    .team-wrapper {
+                    div.et_pb_row {
+                        margin-bottom: 0 !important;
+                        padding-bottom: 0 !important;
+                        .team-wrapper {
                         border: 1px solid #4d4d4d;
                         border-bottom: 10px solid #4d4d4d;
+                        text-align: center;
+                        float: unset;
+                        margin: 0 auto 40px auto !important;
+                        padding-bottom: 0 !important;
                         div.et_pb_module {
                             div.et_pb_text_inner {
                                 h3 {
@@ -230,6 +238,7 @@ div#et-main-area {
                                     }
                                 }
                             }
+                        }
                         }
                     }
                     div#leadership-row-topbody {
