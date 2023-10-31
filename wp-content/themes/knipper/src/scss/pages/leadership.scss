@@ -1,0 +1,273 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER MAINTENANCE PAGE START ******* */
+
+div#et-main-area {
+    div#main-content {
+        article.page {
+            div.entry-content {
+                div#leadership-hero-section {
+                    padding-top: 0 !important;
+                    div#leadership-row-hero {
+                        padding: 0 !important;
+                        div#leadership-hero-col {
+                                div.hero-heading{
+                                    h1 {
+                                        color: #fff;
+                                    }
+                                }
+                        }
+                    }
+                }
+                div#leadership-body-top {
+                    div#leadership-breadcrumb-row {
+                        div#leadership-yoast-breadcrumb {
+                            .breadcrumbs {
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 16px !important;
+                            }
+                            .breadcrumbs a {
+                                color: $mid_grey1 !important;
+                            }
+                            .breadcrumbs a:hover {
+                                color: $dark_blue !important;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                    .team-wrapper {
+                        border: 1px solid #4d4d4d;
+                        :after {
+                            border-bottom: 3px solid #4d4d4d;
+                        }
+                        div.et_pb_module {
+                            div.et_pb_text_inner {
+                                h3 {
+                                    font-family: $font_r;
+                                    font-weight: bold;
+                                    font-size: 24px !important;
+                                    line-height: 29px !important;
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+                                }
+                                p {
+                                    em {
+                                        font-family: $font_r;
+                                        font-size: 21px !important;
+                                        line-height: 29px !important;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div#leadership-row-topbody {
+                        div.leadership-topbody-col {
+                            h2 {
+                                text-align: center;
+                                color: $mid_grey1 !important;
+                                font-family: $font_r;
+                                font-weight: 600;
+                                font-size: 45px !important;
+                                line-height: 54px !important;
+                                text-transform: uppercase;
+                            }
+                            div#triple-diamonds {
+                                text-align: center;
+                                padding-bottom: 4%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1024px) {
+    div#et-main-area {
+    div#main-content {
+        article.page {
+            div.entry-content {
+                div#leadership-hero-section {
+                    padding-top: 0 !important;
+                    div#leadership-row-hero {
+                        padding: 0 !important;
+                        div#leadership-hero-col {
+                                div.hero-heading{
+                                    h1 {
+                                        color: #fff;
+                                    }
+                                }
+                        }
+                    }
+                }
+                div#leadership-body-top {
+                    div#leadership-breadcrumb-row {
+                        div#leadership-yoast-breadcrumb {
+                            .breadcrumbs {
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 16px !important;
+                            }
+                            .breadcrumbs a {
+                                color: $mid_grey1 !important;
+                            }
+                            .breadcrumbs a:hover {
+                                color: $dark_blue !important;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                    .team-wrapper {
+                        border: 1px solid #4d4d4d;
+                        :after {
+                            border-bottom: 3px solid #4d4d4d;
+                        }
+                        div.et_pb_module {
+                            div.et_pb_text_inner {
+                                h3 {
+                                    font-family: $font_r;
+                                    font-weight: bold;
+                                    font-size: 24px !important;
+                                    line-height: 29px !important;
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+                                }
+                                p {
+                                    em {
+                                        font-family: $font_r;
+                                        font-size: 21px !important;
+                                        line-height: 29px !important;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div#leadership-row-topbody {
+                        div.leadership-topbody-col {
+                            h2 {
+                                text-align: center;
+                                color: $mid_grey1 !important;
+                                font-family: $font_r;
+                                font-weight: 600;
+                                font-size: 36px !important;
+                                line-height: 46px !important;
+                                text-transform: uppercase;
+                            }
+                            div#triple-diamonds {
+                                text-align: center;
+                                padding-bottom: 4%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media all and (max-width: 768px) {
+    div#et-main-area {
+    div#main-content {
+        article.page {
+            div.entry-content {
+                div#leadership-hero-section {
+                    padding-top: 0 !important;
+                    div#leadership-row-hero {
+                        padding: 0 !important;
+                        div#leadership-hero-col {
+                                div.hero-heading{
+                                    h1 {
+                                        color: #fff;
+                                    }
+                                }
+                        }
+                    }
+                }
+                div#leadership-body-top {
+                    div#leadership-breadcrumb-row {
+                        div#leadership-yoast-breadcrumb {
+                            .breadcrumbs {
+                                color: $mid_grey1;
+                                font-family: $font_r;
+                                font-weight: 500;
+                                font-size: 16px !important;
+                            }
+                            .breadcrumbs a {
+                                color: $mid_grey1 !important;
+                            }
+                            .breadcrumbs a:hover {
+                                color: $dark_blue !important;
+                                text-decoration: underline;
+                            }
+
+                        }
+                    }
+                    .team-wrapper {
+                        border: 1px solid #4d4d4d;
+                        :after {
+                            border-bottom: 3px solid #4d4d4d;
+                        }
+                        div.et_pb_module {
+                            div.et_pb_text_inner {
+                                h3 {
+                                    font-family: $font_r;
+                                    font-weight: bold;
+                                    font-size: 24px !important;
+                                    line-height: 29px !important;
+                                    padding: 0 !important;
+                                    margin: 0 !important;
+                                }
+                                p {
+                                    em {
+                                        font-family: $font_r;
+                                        font-size: 21px !important;
+                                        line-height: 29px !important;
+                                        font-style: normal;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    div#leadership-row-topbody {
+                        div.leadership-topbody-col {
+                            h2 {
+                                text-align: center;
+                                color: $mid_grey1 !important;
+                                font-family: $font_r;
+                                font-weight: 600;
+                                font-size: 36px !important;
+                                line-height: 46px !important;
+                                text-transform: uppercase;
+                            }
+                            div#triple-diamonds {
+                                text-align: center;
+                                padding-bottom: 4%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+}
+@media all and (max-width: 576px) {
+
+}
+@media all and (max-width: 480px) {
+
+}
+@media all and (max-width: 320px) {
+
+}
+
+/* ******* KNIPPER MAINTENANCE PAGE END ******* */
