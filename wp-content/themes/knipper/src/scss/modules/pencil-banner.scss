@@ -2,9 +2,15 @@
 @import "../base/fonts";
 
 /* ******* KNIPPER NOV 2023 PENCIL BANNER PAGE START ******* */
-div#et-main-area {
+body.post-template-default.single.single-post {
+    div#et-main-area {
+        position: relative;
+        top: 50px;
+    }
+}
+div#et-main-area > div#et-main-area {
     position: relative;
-    top: 25px;
+    top: 50px;
 }
 div#top-pen-banner {
     background-color: $knipper_green;
@@ -42,6 +48,12 @@ div#top-pen-banner-mob {
 @media all and (max-width: 1024px) {
 }
 @media all and (max-width: 980px) {
+    body.post-template-default.single.single-post {
+        div#et-main-area {
+            position: relative;
+            top: 136px;
+        }
+    }
     div#et-main-area {
         position: relative;
         top: 49px;
