@@ -58,7 +58,7 @@
                     <div class="container">
                         <div class="pen-banner-container">
                             <h4 class="pen-banner-text">
-                                KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/2023/11/06/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
+                                KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
                             </h4>
                         </div>
                     </div>
@@ -254,7 +254,7 @@
             <div class="container">
                 <div class="pen-banner-container-mob">
                     <h4 class="pen-banner-text">
-                        KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/2023/11/06/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
+                        KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
                     </h4>
                 </div>
             </div>
