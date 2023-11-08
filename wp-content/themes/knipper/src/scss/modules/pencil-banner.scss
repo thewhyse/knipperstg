@@ -1,0 +1,194 @@
+@import "../base/colors";
+@import "../base/fonts";
+
+/* ******* KNIPPER NOV 2023 PENCIL BANNER PAGE START ******* */
+div#et-main-area {
+    position: relative;
+    top: 25px;
+}
+div#top-pen-banner {
+    background-color: $knipper_green;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+    div.container {
+        align-content: center;
+        div.pen-banner-container {
+            h4.pen-banner-text {
+                padding: 0;
+                @include bold();
+                color: $white;
+                font-size: 20px;
+                line-height: 20px;
+                letter-spacing: 0;
+                a.pen-banner-link {
+                    color: $white;
+                    @include bold();
+                    color: $white;
+                    font-size: 20px;
+                    line-height: 20px;
+                    letter-spacing: 0;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+div#top-pen-banner-mob {
+    display: none;
+}
+
+
+@media all and (max-width: 1024px) {
+}
+@media all and (max-width: 980px) {
+    div#et-main-area {
+        position: relative;
+        top: 49px;
+    }
+    div#top-pen-banner {
+        display: none;
+    }
+    div#top-pen-banner-mob {
+        background-color: $knipper_green;
+        width: 100vw;
+        height: 100px;
+        display: flex;
+        position: absolute;
+        top: 0;
+        z-index: 999999;
+        div.container {
+        align-content: center;
+            div.pen-banner-container-mob {
+                h4.pen-banner-text {
+                    padding: 0;
+                    @include bold();
+                    color: $white;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    a.pen-banner-link {
+                        color: $white;
+                        @include bold();
+                        color: $white;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 768px) {
+    div#top-pen-banner-mob {
+        div.container {
+            max-width: 480px;
+            div.pen-banner-container-mob {
+                h4.pen-banner-text {
+                    padding: 0;
+                    @include bold();
+                    color: $white;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    a.pen-banner-link {
+                        color: $white;
+                        @include bold();
+                        color: $white;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 576px) {
+    div#top-pen-banner-mob {
+        div.container {
+            max-width: 420px;
+            div.pen-banner-container-mob {
+                h4.pen-banner-text {
+                    padding: 0;
+                    @include bold();
+                    color: $white;
+                    font-size: 18px;
+                    line-height: 23px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    a.pen-banner-link {
+                        color: $white;
+                        @include bold();
+                        color: $white;
+                        font-size: 18px;
+                        line-height: 23px;
+                        letter-spacing: 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 480px) {
+    div#top-pen-banner-mob {
+        div.container {
+            max-width: 370px;
+            div.pen-banner-container-mob {
+                h4.pen-banner-text {
+                    padding: 0;
+                    @include bold();
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 21px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    a.pen-banner-link {
+                        color: $white;
+                        @include bold();
+                        color: $white;
+                        font-size: 16px;
+                        line-height: 21px;
+                        letter-spacing: 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+@media all and (max-width: 320px) {
+    div#top-pen-banner-mob {
+        div.container {
+            max-width: 300px;
+            div.pen-banner-container-mob {
+                h4.pen-banner-text {
+                    padding: 0;
+                    @include bold();
+                    color: $white;
+                    font-size: 14px;
+                    line-height: 18px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    a.pen-banner-link {
+                        color: $white;
+                        @include bold();
+                        color: $white;
+                        font-size: 14px;
+                        line-height: 18px;
+                        letter-spacing: 0;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* ******* KNIPPER NOV 2023 PENCIL BANNER PAGE END ******* */
