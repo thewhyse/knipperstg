@@ -39,30 +39,40 @@
         if ($product_tour_enabled || is_page_template('page-template-blank.php')) {
             return;
         }
+
         $et_secondary_nav_items = et_divi_get_top_nav_items();
+
         $et_phone_number = $et_secondary_nav_items->phone_number;
+
         $et_email = $et_secondary_nav_items->email;
+
         $et_contact_info_defined = $et_secondary_nav_items->contact_info_defined;
+
         $show_header_social_icons = $et_secondary_nav_items->show_header_social_icons;
+
         $et_secondary_nav = $et_secondary_nav_items->secondary_nav;
+
         $et_top_info_defined = $et_secondary_nav_items->top_info_defined;
+
         $et_slide_header = 'slide' === et_get_option('header_style', 'left') || 'fullscreen' === et_get_option('header_style', 'left') ? true : false;
+
+        $show_search_icon = (false !== et_get_option('show_search_icon', true) && !$et_slide_header) || is_customize_preview();
         ?>
+
         <?php if ($et_top_info_defined && !$et_slide_header || is_customize_preview()) : ?>
             <?php ob_start(); ?>
-
             <div id="top-header" <?php echo $et_top_info_defined ? '' : 'style="display: none;"'; ?>>
 
                 <!-- ******************* NOV 2023 PENCIL BANNER START ******************* -->
-                    <div id="top-pen-banner">
-                        <div class="container">
-                            <div class="pen-banner-container">
-                                <h4 class="pen-banner-text">
-                                    KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
-                                </h4>
-                            </div>
+                <div id="top-pen-banner">
+                    <div class="container">
+                        <div class="pen-banner-container">
+                            <h4 class="pen-banner-text">
+                                KnippeRx has proudly earned URAC accreditation for Specialty Pharmacy. <a href="/knipperx-receives-urac-accreditation-for-specialty-pharmacy/" class="pen-banner-link">Learn More</a>
+                            </h4>
                         </div>
                     </div>
+                </div>
                 <!-- ******************* NOV 2023 PENCIL BANNER END ******************* -->
 
                 <div class="container clearfix">
@@ -70,11 +80,11 @@
                     <?php if ($et_contact_info_defined) : ?>
 
                         <div id="et-info">
-                            <?php if ('' !== ($et_phone_number = et_get_option('phone_number'))) : ?>
-                                <span id="et-info-phone"><?php echo et_core_esc_previously(et_sanitize_html_input_text($et_phone_number)); ?></span>
+                            <?php if (!empty($et_phone_number = et_get_option('phone_number'))) : ?>
+                                <span id="et-info-phone"><?php echo et_core_esc_previously(et_sanitize_html_input_text(strval($et_phone_number))); ?></span>
                             <?php endif; ?>
 
-                            <?php if ('' !== ($et_email = et_get_option('header_email'))) : ?>
+                            <?php if (!empty($et_email = et_get_option('header_email'))) : ?>
                                 <a href="<?php echo esc_attr('mailto:' . $et_email); ?>"><span id="et-info-email"><?php echo esc_html($et_email); ?></span></a>
                             <?php endif; ?>
 
@@ -118,7 +128,6 @@
 
                 </div>
             </div>
-
             <?php
             $top_header = ob_get_clean();
 
@@ -184,11 +193,11 @@
                         <?php if ($et_contact_info_defined) : ?>
 
                             <div id="et-info">
-                                <?php if ('' !== ($et_phone_number = et_get_option('phone_number'))) : ?>
-                                    <span id="et-info-phone"><?php echo et_core_esc_previously(et_sanitize_html_input_text($et_phone_number)); ?></span>
+                                <?php if (!empty($et_phone_number = et_get_option('phone_number'))) : ?>
+                                    <span id="et-info-phone"><?php echo et_core_esc_previously(et_sanitize_html_input_text(strval($et_phone_number))); ?></span>
                                 <?php endif; ?>
 
-                                <?php if ('' !== ($et_email = et_get_option('header_email'))) : ?>
+                                <?php if (!empty($et_email = et_get_option('header_email'))) : ?>
                                     <a href="<?php echo esc_attr('mailto:' . $et_email); ?>"><span id="et-info-email"><?php echo esc_html($et_email); ?></span></a>
                                 <?php endif; ?>
                             </div>
@@ -247,7 +256,6 @@
         <?php endif; // true ==== $et_slide_header
         ?>
 
-
         <?php ob_start(); ?>
 
         <!-- ******************* NOV 2023 PENCIL BANNER MOBILE START ******************* -->
@@ -262,8 +270,7 @@
             </div>
         <!-- ******************* NOV 2023 PENCIL BANNER MOBILE END ******************* -->
 
-        <header id="main-header" data-height-onload="<?php echo esc_attr(et_get_option('menu_height', '86')); ?>">
-
+        <header id="main-header" data-height-onload="<?php echo esc_attr(et_get_option('menu_height', '66')); ?>">
             <div class="container clearfix et_menu_container">
                 <?php
                 $logo = ($user_logo = et_get_option('divi_logo')) && !empty($user_logo)
@@ -338,12 +345,11 @@
                         <span class="mobile_menu_bar et_pb_header_toggle et_toggle_<?php echo esc_attr(et_get_option('header_style', 'left')); ?>_menu"></span>
                     <?php endif; ?>
 
-                    <?php if ((false !== et_get_option('show_search_icon', true) && !$et_slide_header) || is_customize_preview()) : ?>
+                    <?php if ($show_search_icon) : ?>
                         <div id="et_top_search">
                             <span id="et_search_icon"></span>
                         </div>
-                    <?php endif; // true === et_get_option( 'show_search_icon', false )
-                    ?>
+                    <?php endif; ?>
 
                     <?php
 
@@ -355,31 +361,33 @@
                     do_action('et_header_top');
 
                     ?>
-                </div>
-            </div>
-            <div class="et_search_outer">
-                <div class="container et_search_form_container">
-                    <form role="search" method="get" class="et-search-form" action="<?php echo esc_url(home_url('/')); ?>">
-                        <?php
-                        printf(
-                            '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',
-                            esc_attr__('Search &hellip;', 'Divi'),
-                            get_search_query(),
-                            esc_attr__('Search for:', 'Divi')
-                        );
+                </div> <!-- #et-top-navigation -->
+            </div> <!-- .container -->
+            <?php if ($show_search_icon) : ?>
+                <div class="et_search_outer">
+                    <div class="container et_search_form_container">
+                        <form role="search" method="get" class="et-search-form" action="<?php echo esc_url(home_url('/')); ?>">
+                            <?php
+                            printf(
+                                '<input type="search" class="et-search-field" placeholder="%1$s" value="%2$s" name="s" title="%3$s" />',
+                                esc_attr__('Search &hellip;', 'Divi'),
+                                get_search_query(),
+                                esc_attr__('Search for:', 'Divi')
+                            );
 
-                        /**
-                         * Fires inside the search form element, just before its closing tag.
-                         *
-                         * @since ??
-                         */
-                        do_action('et_search_form_fields');
-                        ?>
-                    </form>
-                    <span class="et_close_search_field"></span>
+                            /**
+                             * Fires inside the search form element, just before its closing tag.
+                             *
+                             * @since ??
+                             */
+                            do_action('et_search_form_fields');
+                            ?>
+                        </form>
+                        <span class="et_close_search_field"></span>
+                    </div>
                 </div>
-            </div>
-        </header>
+            <?php endif; ?>
+        </header> <!-- #main-header -->
         <?php
         $main_header = ob_get_clean();
 
