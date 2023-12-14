@@ -167,7 +167,6 @@ function image_preload_css()
 }
 add_action('wp_head', 'image_preload_css');
 
-
 // Add HotJar script to page head
 function hotjar_javascript()
 {
@@ -215,6 +214,33 @@ function ganalytics_javascript()
 <?php
 }
 add_action('wp_head', 'ganalytics_javascript');
+
+// Add Dealfront tracking script to page head
+function dealfront_javascript()
+{
+?>
+    <script>
+        (function(ss, ex) {
+            window.ldfdr = window.ldfdr || function() {
+                (
+                    ldfdr._q = ldfdr._q || []).push([].slice.call(arguments));
+            };
+            (function(d, s) {
+                fs = d.getElementsByTagName(s)[0];
+
+                function ce(src) {
+                    var cs = d.createElement(s);
+                    cs.src = src;
+                    cs.async = 1;
+                    fs.parentNode.insertBefore(cs, fs);
+                };
+                ce('https://sc.lfeeder.com/lftracker_v1_' + ss + (ex ? '_' + ex : '') + '.js');
+            })(document, 'script');
+        })('ywVkO4XbE218Z6Bj');
+    </script>
+<?php
+}
+add_action('wp_head', 'dealfront_javascript');
 
 // Add Google Tag Manager script to page head
 function gtag_manager_javascript()
@@ -275,6 +301,6 @@ function knipper_script_footer()
             }
         })();
     </script>
-    <?php
+<?php
 }
 add_action('wp_footer', 'knipper_script_footer', 20);
