@@ -153,20 +153,6 @@ function em_disable_urls_validation($result, $value, $form, $field)
 }
 add_filter('gform_field_validation', 'em_disable_urls_validation', 10, 4);
 
-// Add Image Preloads to PAGE HEAD
-function image_preload_css()
-{
-?>
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-markets-hover-yellow-295x60.png" as="image">
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-video-hover-yellow-328x60.png" as="image">
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-contact-hover-yellow-199x60.png" as="image">
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-red-hover-381x60.png" as="image">
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-green-hover-379x60.png" as="image">
-    <link rel="preload" href="/wp-content/themes/knipper/images/button-blue-hover-381x60.png" as="image">
-<?php
-}
-add_action('wp_head', 'image_preload_css');
-
 // Add HotJar script to page head
 function hotjar_javascript()
 {
@@ -219,6 +205,7 @@ add_action('wp_head', 'ganalytics_javascript');
 function dealfront_javascript()
 {
 ?>
+    <!-- Start of Dealfront Embed Code -->
     <script>
         (function(ss, ex) {
             window.ldfdr = window.ldfdr || function() {
@@ -238,6 +225,7 @@ function dealfront_javascript()
             })(document, 'script');
         })('ywVkO4XbE218Z6Bj');
     </script>
+    <!-- End of Dealfront Embed Code -->
 <?php
 }
 add_action('wp_head', 'dealfront_javascript');
